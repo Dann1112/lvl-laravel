@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
 
-        @include('..\partials\head')
+        @include('partials.head')
 
 <script defer src="/assets/js/fontawesome-all.js"></script>
 
