@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="/assets/css/register-styles.css">
     @endpush
     
-    @include('..\partials\head')
+    @include('partials.head')
 
 
     <body>
