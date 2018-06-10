@@ -11,5 +11,7 @@
 |
 */
 
-Route::get('/','RegistrationController@create')->name('register');
-Route::post('/','RegistrationController@store');
+Route::get('/','StandingsController@index')->name('standings');
+
+Route::get('/register','RegistrationController@create')->name('register');
+Route::post('/register','RegistrationController@store');
