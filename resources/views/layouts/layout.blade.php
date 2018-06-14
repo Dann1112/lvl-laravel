@@ -14,7 +14,11 @@
 			@if(Auth::check())
 				<li class="nav-item border-bottom" style="background-color: goldenrod; color:red">
 					<a class="nav-link" href="#"><img class="rounded-circle" src="/assets/img/generic.png" style="max-height: 90%">{{auth()->user()->username}}</a>
-				</li>
+                </li>
+            @else
+                <li class="nav-item border-bottom">
+                    <a href="{{route('login')}}" class="btn acento" style="width:80%; font-weight:bold; color:white"><i class="fas fa-sign-in-alt mr-2"></i>@lang('header.signin')</a>
+                </li>
 			@endif
 
 					<li class="nav-item border-bottom" >
