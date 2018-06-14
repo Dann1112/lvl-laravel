@@ -373,13 +373,13 @@
                                 </select>
                         </div>
 
-                        <!--PROFILE PICTURE-->
+                        <!--PROFILE PICTURE
                         <div class="form-group">
                             <label class="control-label" for="profile_picture">@lang('register.profilePicture')<br></label>
                             <div class="input-group">
                                 <input type="file" name="profile_picture" id="fileToUpload">
                             </div>
-                        </div>
+                        </div>-->
 
                         <!--PREFERRED POSITION-->
                         <div class="form-group">
