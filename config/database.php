@@ -1,7 +1,6 @@
 <?php
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
 $host = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
@@ -59,7 +58,22 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+
+            /*'driver' => 'mysql',
+            'host' => env('RDS_HOSTNAME', '127.0.0.1'),
+            'port' => env('RDS_PORT', '3306'),
+            'database' => env('RDS_DB_NAME', 'lvl'),
+            'username' => env('RDS_USERNAME','root'),
+            'password' => env('RDS_PASSWORD',''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,*/
         ],
+
+        
 
         'pgsql' => [
             'driver' => 'pgsql',

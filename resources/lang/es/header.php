@@ -1,10 +1,9 @@
 <?php
 return [
-    'home' => 'Inicio',
-    'standings' => 'Clasificacion',
-    'players' => 'Jugadores',
-    'contact' => 'Contacto',
-    'ranking' => 'Ranking',
-    'signin' => 'Iniciar Sesión',
-    'signup' => 'Registro'
+    'home' => 'INICIO',
+    'standings' => 'CLASIFICACION',
+    'players' => 'JUGADORES',
+    'contact' => 'CONTACTO',
+    'ranking' => 'RANKING',
+    'signin' => 'INGRESAR'
 ];

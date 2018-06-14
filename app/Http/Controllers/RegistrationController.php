@@ -32,10 +32,10 @@ class RegistrationController extends Controller
             'last_name' => array('required','string','max:55',
                 'regex:/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.\'-]+$/u'),
             'gender' => array( 'required','string', Rule::in(['M', 'F'])),
-            'strong_foot' => Rule::in(['L','R']),
+            //'strong_foot' => Rule::in(['L','R']),
             'position' => array( 'required','string', Rule::in($positions)),
-            'nationality' => 'required|max:3',
-            'profile_picture' => 'file|image',
+            'nationality' => 'required|max:3'
+            //'profile_picture' => 'file|image',
             //'terms_of_service' => 'accepted'*/
         ]);
 
@@ -45,10 +45,10 @@ class RegistrationController extends Controller
             //'public/profile_pictures', request('username').'.'.request()->file('profile_picture')->getClientOriginalExtension()
         //);
 
-        Storage::putFileAs(
-            '/public/profile_pictures',
-            request()->file('profile_picture'),
-            request('username').'.'.request()->file('profile_picture')->getClientOriginalExtension());   
+        //Storage::putFileAs(
+            //'/public/profile_pictures',
+            //request()->file('profile_picture'),
+            //request('username').'.'.request()->file('profile_picture')->getClientOriginalExtension());   
 
         $user = User::create([
             'username' => request('username'),
@@ -59,8 +59,10 @@ class RegistrationController extends Controller
             'position' => request('position'),
             'gender' => request('gender'),
             'nationality' => request('nationality'),
-            'profile_picture' => 'profile_pictures/'.request('username').'.'.request()->file('profile_picture')->getClientOriginalExtension(),
-            'strong_foot' => request('strong_foot')]);
+            //'profile_picture' => 'profile_pictures/'.request('username').'.'.request()->file('profile_picture')->getClientOriginalExtension()
+            'profile_picture' => 'profile_pictures/generic.png',
+            //'strong_foot' => request('strong_foot')
+            ]);
 
             //$user = User::create(request(['username','email','password','name','last_name','gender','position','nationality','profile_picture','strong_foot']));
 

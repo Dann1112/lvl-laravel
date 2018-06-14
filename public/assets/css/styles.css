@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+:root{
+	--back-color: #00D9F4; 
+	--primary-color:#003137;
+	--accent-color-1: #E60065;
+	--back-color-2: #032A8B;
+}
+
 h1,h2,h3,h4{
 	font-family: 'Righteous', 'Roboto',sans-serif;
 }
@@ -13,7 +20,8 @@ body{
 	background-image: url("/assets/img/bg_dark.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: black;
+	background-color:var(--back-color);
+	background-blend-mode: multiply;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -61,9 +69,12 @@ body{
 }
 @media (min-width: 765px) { 
 	header{
-		height: 120px;
-		background-image: url('../img/bg_dark.jpg');
-		/*background-color: #24292e;*/
+		background-color:black;
+		height: 50px;
+		/*background-image: url('../img/bg_dark.jpg');
+		background-color: #24292e;
+		background-color:#00D9F4;
+	  	background-blend-mode: multiply;*/
 	}
 }
 
@@ -73,11 +84,21 @@ body{
 	}
 
 	header{
-		height: 80px;
-		background-image: url('../img/bg_dark.jpg');
-		/*background-color: #24292e;*/
+		height: 50px;
+		background-color:black;
+		/*background-image: url('../img/bg_dark.jpg');
+		background-color: #24292e;*/
+		/*background-image: url(face.jpg);
+	  	background-color:#00D9F4;
+	  	background-blend-mode: multiply;*/
 	}
 }
 
+.contenedor{
+	background-color: #003137;
+	color:white;
+}
 
-
+.acento{
+	background-color: var(--accent-color-1);
+}

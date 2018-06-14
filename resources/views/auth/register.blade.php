@@ -396,13 +396,13 @@
                             </select>
                         </div>
 
-                        <!--FOTO PERFIL-->
+                        <!--FOTO PERFIL
                         <div class="form-group">
                             <label class="control-label">@lang('register.profilePicture')<br></label>
                             <div class="input-group">
                                 <input type="file" name="profile_picture" id="fileToUpload">
                             </div>
-                        </div>
+                        </div>-->
 
                         <!--POSICION PREFERIDA-->
                         <div class="form-group">

@@ -2,9 +2,9 @@
 
 @section('content')
 
-  <div class="row d-flex my-3 col-sm-10 col-12 mx-auto" style="background-color: black">
+  <div class="row d-flex my-3 col-sm-10 col-12 mx-auto rounded contenedor">
 
-        <div class="p-3 col-md-4 col-12 border-radius rounded" style="background-color: rgba(255,255,255,.2); color: white">
+        <div class="p-3 col-md-4 col-12 border-radius rounded contenedor">
 
         <form method="GET" action="{{route('search_results')}}">
 
@@ -399,13 +399,13 @@
     
         
 
-        <div class="col-md-8 col-12 px-md-3 py-md-0 py-3 px-3" style="background-color: black">
+        <div class="col-md-8 col-12 px-md-3 py-md-0 py-3 px-3 contenedor">
 
             @include('layouts/errors')
 
             
 
-          <table class="table table-dark table-striped table-hover table-responsive-md">
+          <table class="table table-dark table-striped table-hover table-responsive-md my-3">
             <thead class="thead-dark">
               <tr class="text-center">
                 <th scope="col">@lang('players.picture')</th><!-- FOTO -->
