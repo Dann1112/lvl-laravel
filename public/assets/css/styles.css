@@ -67,32 +67,16 @@ body{
 	background-color: white;
 	color:black;
 }
-@media (min-width: 765px) { 
-	header{
-		background-color:black;
-		height: 70px;
-		/*background-image: url('../img/bg_dark.jpg');
-		background-color: #24292e;
-		background-color:#00D9F4;
-	  	background-blend-mode: multiply;*/
-	}
+header{
+	height: 70px;
+	background-color:black;
+	/*background-image: url('../img/bg_dark.jpg');
+	background-color: #24292e;*/
+	/*background-image: url(face.jpg);
+	background-color:#00D9F4;
+	background-blend-mode: multiply;*/
 }
 
-@media (max-width: 764px) { 
-	.mob-background{
-		background-image: url('../img/bg_dark.jpg');
-	}
-
-	header{
-		height: 70px;
-		background-color:black;
-		/*background-image: url('../img/bg_dark.jpg');
-		background-color: #24292e;*/
-		/*background-image: url(face.jpg);
-	  	background-color:#00D9F4;
-	  	background-blend-mode: multiply;*/
-	}
-}
 
 footer{
 	height:100%;

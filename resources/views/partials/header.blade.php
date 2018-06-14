@@ -1,6 +1,6 @@
 <header class="fixed-top container-fluid d-flex p-0">
 
-	<div class="container-fluid row d-none d-md-block">
+	<div class="container-fluid row d-none d-md-flex">
 
 		<div class="col-3 d-flex justify-content-center" style="height:100%">
 				<img class="my-auto mx-auto" src="/assets/img/logos/logo2.png" style="max-width:70%; max-height:95%">
@@ -67,37 +67,37 @@
 
 	</div>
 
-	<div class="container-fluid row d-md-none">
+	<div class="container-fluid row d-md-none p-0">
 
 			<div class="col-12 d-flex justify-content-center" style="height:100%">
 					<img class="my-auto mx-auto" src="/assets/img/logos/logo2.png" style="max-width:70%; max-height:95%">
 			</div>
 
-			<div class="col-12 p-0" style="height:100%">
+			<div class="col-12 p-0">
 
-				<ul class="nav flex-column">
+				<ul class="nav flex-column text-center" style="background-color: black">
 
 			<!-- Session Data (Login or User Info) -->
 			@if(Auth::check())
-				<li class="nav-item" style="background-color: goldenrod; color:red">
+				<li class="nav-item border-bottom" style="background-color: goldenrod; color:red">
 					<a class="nav-link" href="#"><img class="rounded-circle" src="/assets/img/generic.png" style="max-height: 90%">{{auth()->user()->username}}</a>
 				</li>
 			@endif
 
-					<li class="nav-item">
-						<a class="nav-link" href="{{route('home')}}">@lang('header.home')</a>
+					<li class="nav-item border-bottom" >
+						<a class="nav-link" href="{{route('home')}}" style="color:white; text-decoration:none; font-weight: bold">@lang('header.home')</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="{{route('standings')}}">@lang('header.standings')</a>
+					<li class="nav-item border-bottom">
+						<a class="nav-link" href="{{route('standings')}}" style="color:white; text-decoration:none; font-weight: bold">@lang('header.standings')</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="{{route('players')}}">@lang('header.players')</a>
+					<li class="nav-item border-bottom">
+						<a class="nav-link" href="{{route('players')}}" style="color:white; text-decoration:none; font-weight: bold">@lang('header.players')</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="#">@lang('header.ranking')</a>
+					<li class="nav-item border-bottom">
+						<a class="nav-link" href="#" style="color:white; text-decoration:none; font-weight: bold">@lang('header.ranking')</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="#">@lang('header.contact')</a>
+					<li class="nav-item border-bottom">
+						<a class="nav-link" href="#" style="color:white; text-decoration:none; font-weight: bold">@lang('header.contact')</a>
 					</li>
 				</ul>
 
