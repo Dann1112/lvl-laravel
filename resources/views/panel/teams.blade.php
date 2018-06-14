@@ -1,4 +1,4 @@
-@extends('dashboard.control')
+@extends('dashboards.control')
 
 @section('option_content')
 
