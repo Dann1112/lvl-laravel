@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="container contenedor text-center">
+<div class="container contenedor text-center my-3">
         <hr>
         <h1>Liga Virtual Latinoamericana<h1>
         <h2>La liga gamer. Tú liga.</h2>
@@ -25,6 +25,7 @@
           Manda cualquier sugerencia que tengas sobre lo que te gustaría ver en la página junto con tu nombre de usuario y más adelante prometemos
           enviar un presente por tu colaboración.
         </p>
+        <a href="mailto:contacto@lvlesports.com"><button class="btn btn-lg acento">Enviar Sugerencia</button></a>
         <h3 class="display-4" >¡ Gracias !</h3>
         <hr>
       

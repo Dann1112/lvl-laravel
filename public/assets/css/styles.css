@@ -111,3 +111,9 @@ footer{
 .signup-box{
     background-color: #F7F7F7;
 }
+
+hr{
+	color:white;
+	border: white;
+	border-radius: 1px;
+}
