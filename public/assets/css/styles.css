@@ -113,7 +113,6 @@ footer{
 }
 
 hr{
-	color:white;
-	border: white;
+	border-color: white;
 	border-radius: 1px;
 }
