@@ -13,7 +13,7 @@
 			<!-- Session Data (Login or User Info) -->
 			@if(Auth::check())
 				<li class="nav-item border-bottom" style="background-color: goldenrod; color:red">
-					<a class="nav-link" href="#"><img class="rounded-circle" src="/assets/img/generic.png" style="max-height: 90%">{{auth()->user()->username}}</a>
+					<a class="nav-link" href="#"><img class="rounded-circle" src="/assets/img/generic.png" style="max-height: 30px">{{auth()->user()->username}}</a>
                 </li>
             @else
                 <li class="nav-item border-bottom">

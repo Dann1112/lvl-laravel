@@ -39,7 +39,7 @@
 									<div class="d-flex">
 										<div class="btn-group mx-auto">
 										<a href="\players\{{auth()->user()->username}}" > <button type="button" class="btn btn-outline-light">
-											<img class="rounded-circle" src="/assets/img/generic.png" style="max-height: 50px"></button></a>
+											<img class="rounded-circle" src="/assets/img/generic.png" style="max-height: 30px"></button></a>
 												<button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 													<span class="sr-only">Toggle Dropdown</span>
 												</button>
