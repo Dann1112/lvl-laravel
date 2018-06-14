@@ -75,10 +75,15 @@ class TeamController extends Controller
             \App\Inscription::create([
                 'player' => request('manager'),
                 'team' => $team->id]);
-            \App\Player::where('username', request('comanager'))->update(['role' => 1]);
+            
+
+
+            if( request()->has('comanager') ){
             \App\Inscription::create([
                 'player' => request('comanager'),
                 'team' => $team->id]);
+                \App\Player::where('username', request('comanager'))->update(['role' => 1]);
+            }
 
 
         //Redirects
