@@ -70,7 +70,7 @@ body{
 @media (min-width: 765px) { 
 	header{
 		background-color:black;
-		height: 50px;
+		height: 70px;
 		/*background-image: url('../img/bg_dark.jpg');
 		background-color: #24292e;
 		background-color:#00D9F4;
@@ -84,7 +84,7 @@ body{
 	}
 
 	header{
-		height: 50px;
+		height: 70px;
 		background-color:black;
 		/*background-image: url('../img/bg_dark.jpg');
 		background-color: #24292e;*/
@@ -92,6 +92,11 @@ body{
 	  	background-color:#00D9F4;
 	  	background-blend-mode: multiply;*/
 	}
+}
+
+footer{
+	height:100%;
+	background-color: black;
 }
 
 .contenedor{

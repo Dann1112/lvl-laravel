@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <div class="row d-flex align-items-center" style="background-image: url('/assets/img/bg_dark.jpg'); height: 100%">
         <div class="col-12 col-lg-4 text-center p-3">
-          <img src="/assets/img/logos/1x2_white.png" class="img-fluid" style="max-height: 150px">
+          <img src="/assets/img/logos/logo2.png" class="img-fluid" style="max-height: 150px">
         </div>
 
         <div class="col-12 col-lg-8 text-center p-3">

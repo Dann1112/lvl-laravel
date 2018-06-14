@@ -32,7 +32,7 @@ class RegistrationController extends Controller
             'last_name' => array('required','string','max:55',
                 'regex:/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.\'-]+$/u'),
             'gender' => array( 'required','string', Rule::in(['M', 'F'])),
-            //'strong_foot' => Rule::in(['L','R']),
+            'strong_foot' => Rule::in(['L','R']),
             'position' => array( 'required','string', Rule::in($positions)),
             'nationality' => 'required|max:3'
             //'profile_picture' => 'file|image',
@@ -59,6 +59,7 @@ class RegistrationController extends Controller
             'position' => request('position'),
             'gender' => request('gender'),
             'nationality' => request('nationality'),
+            'birth_date' => request('year').request('month').request('day'),
             //'profile_picture' => 'profile_pictures/'.request('username').'.'.request()->file('profile_picture')->getClientOriginalExtension()
             'profile_picture' => 'profile_pictures/generic.png',
             //'strong_foot' => request('strong_foot')

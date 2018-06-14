@@ -421,7 +421,7 @@
               @foreach($players->all() as $player)
             <a href="players/{{$player->username}}">
             <tr class="text-center clickable-row" data-href='players/{{$player->username}}' style="cursor:pointer">
-                <th scope="row"><img src="storage/{{$player->profile_picture}}" style="max-height: 30px; max-width: 30px"></th>
+                <th scope="row"><img src="/assets/img/generic.png" style="max-height: 30px; max-width: 30px"></th>
                 <td><img src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="max-height: 30px; max-width: 30px"></td>
                 <td>{{$player->username}}</td>
                   <td>{{$player->overall}}</td>

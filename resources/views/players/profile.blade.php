@@ -6,7 +6,7 @@
 
        <div class="row p-3">
       <div class="col-3 text-center rounded-circle p-3" style="background-image: url('/assets/img/bg_light.jpg'); height:300px">
-      <img class="image-fluid rounded-circle" alt="{{$player->username}}" src="/storage/{{$player->profile_picture}}" style="height:100%; max-width:100%; ">
+      <img class="image-fluid rounded-circle" alt="{{$player->username}}" src="/assets/img/generic.png" style="height:100%; max-width:100%; ">
       </div>
       <div class="col-9 text-center my-auto" style="">
         <div class="d-flex justify-content-center">
