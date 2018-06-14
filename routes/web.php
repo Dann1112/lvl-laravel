@@ -1,10 +1,8 @@
 <?php
 
-//Route::get('/', function(){
-    //return view('home');})
-//->name('home');
-
-Route::get('/','StandingsController@index')->name('home');
+Route::get('/', function(){
+    return view('home');})
+->name('home');
 
 Route::get('/search','PlayerController@showAll')->name('players');
 Route::get('/search/results','PlayerController@search')->name('search_results');

@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Filter Options-->
-<div class="container-fluid py-3 col-sm-10 col-12 mx-auto container">
+<div class="container-fluid py-3 col-sm-10 col-12 mx-auto contenedor">
 
         <div class="container d-flex justify-content-between p-3 mb-1">
           <select class="custom-select" id="inputGroupSelect01">
