@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container contenedor text-center my-3 py-3">
-        <hr>
-        <h1>Liga Virtual Latinoamericana<h1>
-        <h2>La liga gamer. Tú liga.</h2>
+        <hr><hr>
+        <h1 style="word-break: break-all">LIGA VIRTUAL LATINOAMERICANA<h1>
+        <h2 class="my-2">La liga gamer. Tú liga.</h2>
         <hr>
         <hr>
         <h3>¿QUIENES SOMOS?</h3>
@@ -27,7 +27,7 @@
           enviar un presente por tu colaboración.
         </p>
         <a href="mailto:contacto@lvlesports.com"><button class="btn btn-lg acento">Enviar Sugerencia</button></a>
-        <h3 class="display-4 my-2" >¡ Gracias !</h3>
+        <h3 class="display-4 my-2" style="color:white">¡ Gracias !</h3>
         <hr>
       
       </div>
