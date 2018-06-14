@@ -107,3 +107,7 @@ footer{
 .acento{
 	background-color: var(--accent-color-1);
 }
+
+.signup-box{
+    background-color: #F7F7F7;
+}

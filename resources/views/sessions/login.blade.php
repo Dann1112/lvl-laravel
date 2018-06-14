@@ -6,14 +6,14 @@
 
 <script defer src="/assets/js/fontawesome-all.js"></script>
 
-<body style="background-color: #F9F9F9">
+<body>
 
   <!-- Container principal-->
   <div class="container-fluid px-5 py-5" >
 
     <div class="container border rounded px-5" style="width: 500px; background-color: #FFFFFF">
       <section>
-        <img class="img-fluid mx-auto d-block" src="/assets/img/logos/1x1_white.png" style="height:150px">
+        <img class="img-fluid mx-auto d-block" src="/assets/img/logos/logo2.png" style="height:150px">
         <h1 class="entry-title text-center text-dark">Iniciar Sesión</h1>
         <hr>
       

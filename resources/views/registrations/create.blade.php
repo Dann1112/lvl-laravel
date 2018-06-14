@@ -1,9 +1,5 @@
 <!doctype html>
 <html lang="es">
-
-     @push('stylesheets')
-        <link rel="stylesheet" href="/assets/css/register-styles.css">
-    @endpush
     
     @include('partials.head')
 
@@ -13,7 +9,7 @@
         <div class="container-fluid py-2">
             <div class="container border rounded signup-box px-5 py-2 px-sm-10 col-md-5 col-sm-10 col-xs-12">
             <section>
-                    <img class="logo-h1 img-fluid mx-auto d-block my-3" src="/assets/img/logos/1x2_white.png">
+                    <img class="logo-h1 img-fluid mx-auto d-block my-3" src="/assets/img/logos/logo2.png">
                     <h1 class="text-center" style="color:black">@lang('register.title')</h1>
                     <p class="text-center">@lang('register.valuesMarked')(<span class="text-danger">*</span>)@lang('register.areRequired')</p>
                     <hr>
