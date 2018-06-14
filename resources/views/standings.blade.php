@@ -3,12 +3,12 @@
 @section('content')
 
 <!-- Filter Options-->
-<div class="container-fluid py-3 col-sm-10 col-12 mx-auto" style="background-color: black">
+<div class="container-fluid py-3 col-sm-10 col-12 mx-auto container">
 
         <div class="container d-flex justify-content-between p-3 mb-1">
           <select class="custom-select" id="inputGroupSelect01">
             
-            <option value="01022018" selected>Temporada Enero/Marzo 2018</option>
+            <option value="01022018" selected>@lang('standings.season') 2018</option>
           </select>
     </div>
     
