@@ -38,6 +38,9 @@ Route::post('/panel/competitions','CompetitionsController@store');
 Route::get('/panel/fixtures','FixturesController@create')->name('fixtures');
 Route::post('/panel/fixtures','FixturesController@store');
 
+Route::get('/panel/results','FixturesController@results')->name('results');
+Route::post('/panel/results','FixturesController@saveResults');
+
 Route::get('/panel/inscriptions','StandingsController@create')->name('inscriptions');
 Route::post('/panel/inscriptions','StandingsController@store');
 

@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fixture extends Model
 {
-    protected $primaryKey = ['fixture','player'];
     public $timestamps = false;
 
     protected $fillable = [

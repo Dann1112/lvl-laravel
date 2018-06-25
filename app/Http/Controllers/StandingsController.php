@@ -17,7 +17,7 @@ class StandingsController extends Controller
         
 
         //Looks for the standings of the teams in those competitions
-        $standings = \App\Standing::where('competition','=',$active)->orderBy('points')->get();
+        $standings = \App\Standing::where('competition','=',$active)->orderBy('points','DESC')->get();
 
         //Looks for the name of the teams in those competitions to look for their info in Teams table
         $teamsInStandings = \App\Standing::where('competition','=',$active)->pluck('team');
