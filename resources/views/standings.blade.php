@@ -15,10 +15,7 @@
         <!-- Table -->
         <div class="container-fluid">
 
-          
-            @foreach($competitions as $comp)
-
-            <table class="table table-striped table-dark table-hover">
+           <table class="table table-striped table-dark table-hover">
                 <thead class="thead-dark">
                   <tr>
                     <th scope="col">Pos</th>
@@ -34,14 +31,21 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @php $cont = 0;@endphp
                   @foreach($standings as $stand)
-                  @if($stand->competition == $comp->id)
+                  @php $cont++; @endphp
+
                   @foreach($teams as $team)
                   @if($stand->team == $team->id)
-                  
+                  @if($cont==1)
+                  <tr style="background-color: greenyellow">
+                    @else
                     <tr>
-                        <th scope="row">{{$stand->position}}&nbsp<i class="fa fa-caret-up"></i></th>
-                    <td><img src="/storage/{{$team->logo}}" style="max-height: 20px; max-width: 20px">
+                      @endif
+                        <!--<th scope="row">{{$stand->position}}&nbsp<i class="fa fa-caret-up"></i></th>-->
+                        <td>{{$cont}}</td>
+                    <!-- <td><img src="/storage/{{$team->logo}}" style="max-height: 20px; max-width: 20px"> -->
+                    <td><i class="fas fa-circle" style="color: {{$team->primary_color}}"></i>
                         <span class="d-none d-sm-inline">&#160&#160{{$team->name}}</span>
                           <span class="d-inline d-sm-none">{{$team->abbreviation}}</span></td>
                         <td style="font-weight: bold">{{$stand->games_played}}</td>
@@ -57,19 +61,10 @@
                       @continue
                       @endif
                       @endforeach
-                  @else
-                    @continue
-
-                  @endif
-
-                  
-
-
                   @endforeach
                   
                 </tbody>
               </table>
-            @endforeach
           
         </div>
     

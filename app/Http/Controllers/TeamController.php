@@ -45,17 +45,17 @@ class TeamController extends Controller
                 'required','string','min:3','max:25','unique:teams',
                 'regex:/^[a-z\d_ -]{3,25}$/i'),
             'abbreviation' => 'required|string|max:3',
-            'manager' => 'required|string',
-            'logo' => 'file|image'
+            'manager' => 'required|string'
+            //'logo' => 'file|image'
 
         ]);
 
         //Creates and Saves the team
 
-        Storage::putFileAs(
-            '/public/team_logos',
-            request()->file('logo'),
-            request('name').'.'.request()->file('logo')->getClientOriginalExtension());   
+        //Storage::putFileAs(
+            //'/public/team_logos',
+            //request()->file('logo'),
+            //request('name').'.'.request()->file('logo')->getClientOriginalExtension());   
 
         $team = Team::create([
             'name' => request('name'),
@@ -64,7 +64,7 @@ class TeamController extends Controller
             'comanager' => request('comanager'),
             'streaming_channel' => request('streaming_channel'),
             'primary_color' => request('primary_color'),
-            'logo' => 'team_logos/'.request('name').'.'.request()->file('logo')->getClientOriginalExtension(),
+            //'logo' => 'team_logos/'.request('name').'.'.request()->file('logo')->getClientOriginalExtension(),
             'facebook' => request('facebook'),
             'instagram' => request('instagram'),
             'twitter' => request('twitter'),
@@ -72,13 +72,14 @@ class TeamController extends Controller
             'youtube' => request('youtube')]);
 
             \App\Player::where('username', request('manager'))->update(['role' => 1]);
+
             \App\Inscription::create([
                 'player' => request('manager'),
                 'team' => $team->id]);
             
 
 
-            if( request()->has('comanager') ){
+            if( request()->has('comanager') && request('comanager') != ""){
             \App\Inscription::create([
                 'player' => request('comanager'),
                 'team' => $team->id]);

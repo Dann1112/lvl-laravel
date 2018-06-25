@@ -59,10 +59,10 @@
               <input type="color" class="form-control col-10" name="primary_color" required>
             </div>
 
-            <div class="form-row text-center my-2">
+            <!--<div class="form-row text-center my-2">
               <label class="col-form-label col-2" for="logo">@lang('panel.logo')&nbsp<span class="text-danger">*</span></label>
               <input type="file" class="col-10" name="logo" required>
-            </div>
+            </div>-->
 
             <div class="form-row text-center my-2">
               <label class="col-form-label col-2" for="twitter">@lang('panel.twitter')</label>

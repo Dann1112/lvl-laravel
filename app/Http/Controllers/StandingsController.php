@@ -7,24 +7,28 @@ use \App\Standing;
 
 class StandingsController extends Controller
 {
+
     public function index(){
 
         //Looks for the id of active competitions so we can look for the standings of those matches
-        $active = \App\Competition::where('status','0')->pluck('id');
+        //$active = \App\Competition::where('status','0')->pluck('id');
+        $active = 1;
+
+        
 
         //Looks for the standings of the teams in those competitions
-        $standings = \App\Standing::whereIn('competition',$active)->orderBy('position')->get();
+        $standings = \App\Standing::where('competition','=',$active)->orderBy('points')->get();
 
-        //Looks for the name of the teams in those competitions
-        $teamsInStandings = \App\Team::all()->pluck('id');
+        //Looks for the name of the teams in those competitions to look for their info in Teams table
+        $teamsInStandings = \App\Standing::where('competition','=',$active)->pluck('team');
 
         //Gets the info of the active competitions
-        $competitions = \App\Competition::whereIn('id',$active)->get();
+        $competition = \App\Competition::where('id','=',$active)->first();
 
         //Looks for the full info of the teams involved
         $teams = \App\Team::whereIn('id',$teamsInStandings)->get();
 
-        return view ('standings',compact('standings','competitions','teams'));
+        return view ('standings',compact('standings','competition','teams'));
     }
 
     public function create(){
