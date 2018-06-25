@@ -50,18 +50,20 @@ class FixturesController extends Controller
         if(request('home_goals') > request('away_goals')){
             $homePoints = 3;
             $homeWonGames = 1;
+            $awayLostGames = 1;
             $awayPoints = 0;
             
         } else if (request('home_goals') < request('away_goals')){
             $homePoints = 0;
             $awayPoints = 3;
             $awayWonGames = 1;
+            $homeLostGames = 1;
 
         }else{
             $homePoints = 1;
             $homeTiedGames = 1;
             $awayPoints = 1;
-            $homeTiedGames = 1;
+            $awayTiedGames = 1;
         }
 
         $homePoints = $home->points + $homePoints;
