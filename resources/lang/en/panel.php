@@ -48,5 +48,16 @@
         'team' => 'Team',
         'new_inscription' => 'New Inscription',
         'inscriptions' => 'Inscriptions',
-        'player_stats' => 'Player Stats'
+        'player_stats' => 'Player Stats',
+        'new_player_stat' => 'New Player Stat',
+        'player' => 'Player',
+        'goals' => 'Goals',
+        'assists' => 'Assists',
+        'key_passes' => 'Key Passes',
+        'attack' => 'Attack',
+        'defense' => 'Defense',
+        'interceptions' => 'Interceptions',
+        'blocks' => 'Blocks',
+        'tackles' => 'Tackles',
+        'save' => 'Save'
     ];

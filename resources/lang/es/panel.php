@@ -47,5 +47,16 @@
         'team' => 'Equipo',
         'new_inscription' => 'Nueva Inscripcion',
         'inscriptions' => 'Inscripciones',
-        'player_stats' => 'Stats por Jugador'
+        'player_stats' => 'Stats por Jugador',
+        'new_player_stat' => 'Nuevo Stat de Jugador',
+        'player' => 'Jugador',
+        'goals' => 'Goles',
+        'assists' => 'Asistencias',
+        'key_passes' => 'Pases Clave',
+        'attack' => 'Ataque',
+        'defense' => 'Defensa',
+        'interceptions' => 'Intercepciones',
+        'blocks' => 'Bloqueos',
+        'tackles' => 'Barridas',
+        'save' => 'Guardar'
     ];

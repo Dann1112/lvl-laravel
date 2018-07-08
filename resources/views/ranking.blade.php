@@ -63,8 +63,8 @@
               <a href="/ranking/failed_tackles"> <button name="tacklesBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_tackles')</button></a>
               <a href="/ranking/blocks"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.blocks')</button></a>
               <a href="/ranking/interceptions"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.interceptions')</button></a>
-              <a href="/ranking/won_possesion"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.won_possesion')</button></a>
-              <a href="/ranking/lost_possesion"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.lost_possesion')</button></a>
+              <a href="/ranking/won_posession"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.won_posession')</button></a>
+              <a href="/ranking/lost_posession"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.lost_posession')</button></a>
               <a href="/ranking/clearances"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.clearances')</button></a>
               <a href="/ranking/won_headers"> <button name="headersWonBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.won_headers')</button></a>
               <a href="/ranking/lost_headers"> <button name="headersWonBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.lost_headers')</button></a>
@@ -105,19 +105,19 @@
             </div>
             <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
               <div class="card-body">
-                 <a href="/ranking/goals"> <button name="winsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.wins')</button></a>
-                  <a href="/ranking/goals"> <button name="losesBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.loses')</button></a>
-                  <a href="/ranking/goals"> <button name="goalsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.goals')</button></a>
-                  <a href="/ranking/goals"> <button name="yellowCardsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.yellow_cards')</button></a>
-                  <a href="/ranking/goals"> <button name="redCardsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.red_cards')</button></a>
-                  <a href="/ranking/goals"> <button name="shotsOnTargetClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.shots_on_target')</button></a>
-                  <a href="/ranking/goals"> <button name="shotsOnTargetClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.shots_away')</button></a>
-                  <a href="/ranking/goals"> <button name="completedPassesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_passes')</button></a>
-                  <a href="/ranking/goals"> <button name="completedPassesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_passes')</button></a>
-                  <a href="/ranking/goals"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_crosses')</button></a>
-                  <a href="/ranking/goals"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_crosses')</button></a>
-                  <a href="/ranking/goals"> <button name="cleanSheetsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.clean_sheets_gk')</button></a>
-                  <a href="/ranking/goals"> <button name="foulsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.fouls')</button></a>
+                 <a href="/ranking/clubs/wins"> <button name="winsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.wins')</button></a>
+                  <a href="/ranking/clubs/loses"> <button name="losesBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.loses')</button></a>
+                  <a href="/ranking/clubs/goals"> <button name="goalsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.goals')</button></a>
+                  <a href="/ranking/clubs/yellow_cards"> <button name="yellowCardsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.yellow_cards')</button></a>
+                  <a href="/ranking/clubs/red_cards"> <button name="redCardsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.red_cards')</button></a>
+                  <a href="/ranking/clubs/shots_on_target"> <button name="shotsOnTargetClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.shots_on_target')</button></a>
+                  <a href="/ranking/clubs/shots_away"> <button name="shotsOnTargetClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.shots_away')</button></a>
+                  <a href="/ranking/clubs/completed_passes"> <button name="completedPassesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_passes')</button></a>
+                  <a href="/ranking/clubs/failed_passes"> <button name="completedPassesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_passes')</button></a>
+                  <a href="/ranking/clubs/succesful_crosses"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_crosses')</button></a>
+                  <a href="/ranking/clubs/failed_crosses"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_crosses')</button></a>
+                  <a href="/ranking/clubs/clean_sheets"> <button name="cleanSheetsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.clean_sheets_gk')</button></a>
+                  <a href="/ranking/clubs/fouls"> <button name="foulsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.fouls')</button></a>
               </div>
             </div>
         </div>
@@ -133,18 +133,36 @@
       <hr style="border-color: white">
       <table class="table table-dark table-striped table-hover table-responsive-xl">
         <thead class="thead-dark">
-          <tr class="text-center">
-            <th>@lang('ranking.position')</th><!-- FOTO -->
-            <th>@lang('ranking.name')</th>
-            <th>@lang('ranking.team')</th>
-            <th>@lang('ranking.stat')</th>
-          </tr>
+            
+
+            <tr class="text-center">
+              @if(isset($teams))
+                <th>@lang('ranking.position')</th><!-- FOTO -->
+                <th>@lang('ranking.team')</th>
+                <th>@lang('ranking.stat')</th>
+              @else
+                <th>@lang('ranking.position')</th><!-- FOTO -->
+                <th>@lang('ranking.name')</th>
+                <th>@lang('ranking.team')</th>
+                <th>@lang('ranking.stat')</th>
+              @endif
+              </tr>
+
         </thead>
         <tbody>
           <?php $cont = 1;?>
-          @foreach($players as $player)
-          
 
+        @if(isset($teams))
+          @foreach($teams as $team)
+          <tr class="text-center">
+          <th class="align-middle" style="text">{{($teams->currentPage()-1) * $teams->perPage() + $cont++}}°</th>
+              <td class="align-middle">{{$team->TEAM}}</td>
+              <td class="align-middle">{{$team->STAT}}</td>
+          </tr>
+          @endforeach
+        @else
+        
+          @foreach($players as $player)
           <tr class="text-center">
           <th class="align-middle" style="text">{{($players->currentPage()-1) * $players->perPage() + $cont++}}°</th>
               <td class="align-middle">{{$player->player}}</td>
@@ -154,7 +172,7 @@
                         foreach ($ts as $t){
                           $ts2 = \App\Team::where('id',$t->team)->get();
                           foreach($ts2 as $t2){
-                            echo('<td class="img-fluid"><img style="max-height:30px; max-width:30px" src="/storage/'.$t2->logo.'"></td>');
+                            echo('<td class="img-fluid"><span class="badge" style="background-color:'.$t2->primary_color.'; color:black; font-weight:bold">'.$t2->name.'</span></td>');
                           }
                         }
                       }
@@ -163,19 +181,20 @@
                       }
                 ?>
 
-              @if($stat !== 'games_played')
-                <td class="align-middle">{{$player->$stat}}</td>
-              @else
-                <td class="align-middle">{{$players->where('player',$player->player)->count()}}</td>
-              @endif
+                <td class="align-middle">{{$player->STAT}}</td>
               
           </tr>
           @endforeach
+          @endif
           
         </tbody>
       </table>
 
-      {{ $players->links() }}
+      @if(isset($teams))
+        {{ $teams->links() }}
+      @else
+        {{ $players->links() }}
+      @endif
     </div>
 
   </div>

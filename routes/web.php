@@ -7,6 +7,10 @@ Route::get('/', function(){
 Route::get('/search','PlayerController@showAll')->name('players');
 Route::get('/search/results','PlayerController@search')->name('search_results');
 
+//Route::get('/prueba',function(){
+    //return view('panel.player_stats');
+//})->name('player_stats');
+
 Route::get('/profile/edit','PlayerController@editProfile')->name('edit_profile');
 Route::get('/profile/inbox','MessageController@index')->name('inbox');
 Route::post('/profile/inbox','MessageController@createClubRequest')->name('club_request');
@@ -21,6 +25,7 @@ Route::post('/teams','TeamController@store')->name('teams');
 
 Route::get('/ranking','PlayerStatController@index')->name('rankings');
 Route::get('/ranking/{stat}','PlayerStatController@show');
+Route::get('/ranking/clubs/{stat}','PlayerStatController@showClubs');
 
 Route::get('/standings','StandingsController@index')->name('standings');
 
@@ -44,7 +49,8 @@ Route::post('/panel/results','FixturesController@saveResults');
 Route::get('/panel/inscriptions','StandingsController@create')->name('inscriptions');
 Route::post('/panel/inscriptions','StandingsController@store');
 
-Route::get('/panel/player-stats','PlayerStatsController@index')->name('player_stats');
+Route::get('/panel/stats','PlayerStatController@newStat')->name('player_stats');
+Route::post('/panel/stats','PlayerStatController@store');
 
 
 Route::get('/logout','SessionsController@destroy')->name('logout');
