@@ -36,8 +36,8 @@ class CreatePlayerStatsTable extends Migration
                         $table->unsignedTinyInteger('conceded_penalties')->default(0);
                         $table->unsignedTinyInteger('interceptions')->default(0);
                         $table->unsignedTinyInteger('blocks')->default(0);
-                        $table->unsignedTinyInteger('won_posession')->default(0);
-                        $table->unsignedTinyInteger('lost_posession')->default(0);
+                        $table->unsignedTinyInteger('won_possession')->default(0);
+                        $table->unsignedTinyInteger('lost_possession')->default(0);
                         $table->unsignedTinyInteger('clearances')->default(0);
                         $table->unsignedTinyInteger('won_headers')->default(0);
                         $table->unsignedTinyInteger('lost_headers')->default(0);

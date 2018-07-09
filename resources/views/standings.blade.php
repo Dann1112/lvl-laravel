@@ -38,7 +38,7 @@
                   @foreach($teams as $team)
                   @if($stand->team == $team->id)
                   @if($cont==1)
-                  <tr style="background-color: greenyellow">
+                  <tr class="bg-success">
                     @else
                     <tr>
                       @endif

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+
+
 :root{
 	--back-color: #00D9F4; 
 	--primary-color:#003137;
@@ -7,8 +9,15 @@
 	--back-color-2: #032A8B;
 }
 
+
+
 h1,h2,h3,h4{
 	font-family: 'Righteous', 'Roboto',sans-serif;
+	color:white;
+}
+
+p, label{
+	color:white;
 }
 
 input{

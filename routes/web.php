@@ -23,8 +23,7 @@ Route::get('/teams/{team}','TeamController@show');
 
 Route::post('/teams','TeamController@store')->name('teams');
 
-Route::get('/ranking','PlayerStatController@index')->name('rankings');
-Route::get('/ranking/{stat}','PlayerStatController@show');
+Route::get('/ranking/{stat}','PlayerStatController@show')->name('ranking');
 Route::get('/ranking/clubs/{stat}','PlayerStatController@showClubs');
 
 Route::get('/standings','StandingsController@index')->name('standings');

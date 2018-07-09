@@ -63,8 +63,8 @@
               <a href="/ranking/failed_tackles"> <button name="tacklesBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_tackles')</button></a>
               <a href="/ranking/blocks"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.blocks')</button></a>
               <a href="/ranking/interceptions"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.interceptions')</button></a>
-              <a href="/ranking/won_posession"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.won_posession')</button></a>
-              <a href="/ranking/lost_posession"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.lost_posession')</button></a>
+              <a href="/ranking/won_possession"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.won_possession')</button></a>
+              <a href="/ranking/lost_possession"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.lost_possession')</button></a>
               <a href="/ranking/clearances"> <button name="interceptionsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.clearances')</button></a>
               <a href="/ranking/won_headers"> <button name="headersWonBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.won_headers')</button></a>
               <a href="/ranking/lost_headers"> <button name="headersWonBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.lost_headers')</button></a>
@@ -131,6 +131,22 @@
       <hr style="border-color: white">
       <h1 class="display-4" style="color: white">Top @lang('ranking.'.$stat.'')</h1>
       <hr style="border-color: white">
+
+      @if(isset($teams))
+        <form class="col-12 row my-2" method="GET" action='/ranking/clubs/{{$stat}}' enctype="multipart/form-data">
+      @else
+        <form class="col-12 row my-2" method="GET" action='/ranking/{{$stat}}' enctype="multipart/form-data">
+      @endif
+            <label class="col-form-label ml-auto col-2" for="competition">@lang('panel.competition')&nbsp: </label>
+              <select class="form-control col-3" name="competition">
+                    <option selected disabled hidden>@lang('panel.choose_option')</option>
+                  @foreach($competitions as $comp)
+                    <option value="{{$comp->id}}">{{$comp->name}}</option>
+                  @endforeach
+              </select>
+              <button type="submit" class="btn btn-primary btn-lg ml-2">@lang('panel.show')</button>
+      </form>
+
       <table class="table table-dark table-striped table-hover table-responsive-xl">
         <thead class="thead-dark">
             
@@ -153,7 +169,9 @@
           <?php $cont = 1;?>
 
         @if(isset($teams))
+        
           @foreach($teams as $team)
+          
           <tr class="text-center">
           <th class="align-middle" style="text">{{($teams->currentPage()-1) * $teams->perPage() + $cont++}}°</th>
               <td class="align-middle">{{$team->TEAM}}</td>
@@ -161,9 +179,16 @@
           </tr>
           @endforeach
         @else
-        
+
+          @php $place = 0;@endphp
           @foreach($players as $player)
+          @php $place++; @endphp
+          @if($place==1)
+          <tr class="text-center bg-success">
+          @else
           <tr class="text-center">
+          @endif
+          
           <th class="align-middle" style="text">{{($players->currentPage()-1) * $players->perPage() + $cont++}}°</th>
               <td class="align-middle">{{$player->player}}</td>
 

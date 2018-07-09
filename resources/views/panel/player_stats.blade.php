@@ -31,7 +31,11 @@
             <div class="form-row text-center my-2">
               <label class="col-form-label col-2" for="competition">@lang('panel.competition')&nbsp<span class="text-danger">*</span></label>
               <select class="form-control col-3" name="competition">
-                  <option selected disabled hidden>@lang('panel.choose_option')</option>
+                    <option selected disabled hidden>@lang('panel.choose_option')</option>
+                  @foreach($competitions as $comp)
+                    <option value="{{$comp->id}}">{{$comp->name}}</option>
+                  @endforeach
+                  
                   
               </select>
               <label class="col-form-label col-1 " for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
@@ -39,6 +43,9 @@
               <label class="col-form-label col-1 " for="player">@lang('panel.player')&nbsp<span class="text-danger">*</span></label>
               <select class="form-control col-3" name="player">
                 <option selected disabled hidden>@lang('panel.choose_option')</option>
+                @foreach($players as $player)
+                    <option value="{{$player}}">{{$player}}</option>
+                  @endforeach
                 
             </select>
               <br>
@@ -55,13 +62,40 @@
                   <input class="form-control col-6" type="number" name="goals" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="shots_on_target">@lang('panel.shots_on_target')</label>
+                    <input class="form-control col-6" type="number" name="shots_on_target" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="shots_away">@lang('panel.shots_away')</label>
+                    <input class="form-control col-6" type="number" name="shots_away" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
                     <label class="col-form-label col-6 " for="assists">@lang('panel.assists')</label>
                     <input class="form-control col-6" type="number" name="assists" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="shots_on_target">@lang('panel.shots_on_target')</label>
-                    <input class="form-control col-6" type="number" name="shots_on_target" value="0">
+                    <label class="col-form-label col-6 " for="completed_passes">@lang('panel.completed_passes')</label>
+                    <input class="form-control col-6" type="number" name="completed_passes" value="0">
                 </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="failed_passes">@lang('panel.failed_passes')</label>
+                    <input class="form-control col-6" type="number" name="failed_passes" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="completed_crosses">@lang('panel.completed_crosses')</label>
+                    <input class="form-control col-6" type="number" name="completed_crosses" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="failed_crosses">@lang('panel.failed_crosses')</label>
+                    <input class="form-control col-6" type="number" name="failed_crosses" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="fouls_received">@lang('panel.fouls_received')</label>
+                    <input class="form-control col-6" type="number" name="fouls_received" value="0">
+                </div>
+                
+              
+                
                 
 
 
@@ -73,8 +107,20 @@
                   <h3>@lang('panel.defense')</h3>
                   <hr>
                   <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="won_tackles">@lang('panel.won_tackles')</label>
-                    <input class="form-control col-6" type="number" name="won_tackles" value="0">
+                      <label class="col-form-label col-6 " for="won_tackles">@lang('panel.won_tackles')</label>
+                      <input class="form-control col-6" type="number" name="won_tackles" value="0">
+                  </div>
+                  <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="failed_tackles">@lang('panel.failed_tackles')</label>
+                    <input class="form-control col-6" type="number" name="failed_tackles" value="0">
+                </div>
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="fouls">@lang('panel.fouls')</label>
+                      <input class="form-control col-6" type="number" name="fouls" value="0">
+                  </div>
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="conceded_penalties">@lang('panel.conceded_penalties')</label>
+                      <input class="form-control col-6" type="number" name="conceded_penalties" value="0">
                   </div>
                   <div class="container col-11 d-flex ">
                       <label class="col-form-label col-6 " for="interceptions">@lang('panel.interceptions')</label>
@@ -84,14 +130,58 @@
                       <label class="col-form-label col-6 " for="blocks">@lang('panel.blocks')</label>
                       <input class="form-control col-6" type="number" name="blocks" value="0">
                   </div>
-                  
-  
-  
-                  
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="won_possession">@lang('panel.won_possession')</label>
+                      <input class="form-control col-6" type="number" name="won_possession" value="0">
+                  </div>
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="lost_possession">@lang('panel.lost_possession')</label>
+                      <input class="form-control col-6" type="number" name="lost_possession" value="0">
+                  </div>
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="clearances">@lang('panel.clearances')</label>
+                      <input class="form-control col-6" type="number" name="clearances" value="0">
+                  </div>
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="won_headers">@lang('panel.won_headers')</label>
+                      <input class="form-control col-6" type="number" name="won_headers" value="0">
+                  </div>
+                  <div class="container col-11 d-flex ">
+                      <label class="col-form-label col-6 " for="lost_headers">@lang('panel.lost_headers')</label>
+                      <input class="form-control col-6" type="number" name="lost_headers" value="0">
+                  </div>
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg my-3" style="width:50%">@lang('panel.save')</button>
+            <div class="container col-5 d-flex-column p-3 border rounded">
+                <h3>@lang('panel.goalkeeper')</h3>
+                <hr>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="goals_conceded_gk">@lang('panel.goals_conceded')</label>
+                    <input class="form-control col-6" type="number" name="goals_conceded_gk" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="shots_caught_gk">@lang('panel.shots_caught')</label>
+                    <input class="form-control col-6" type="number" name="shots_caught_gk" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="shots_driven_gk">@lang('panel.shots_driven')</label>
+                    <input class="form-control col-6" type="number" name="shots_driven_gk" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="crosses_caught_gk">@lang('panel.crosses_caught')</label>
+                    <input class="form-control col-6" type="number" name="crosses_caught_gk" value="0">
+                </div>
+                <div class="container col-11 d-flex ">
+                    <label class="col-form-label col-6 " for="balls_taken_gk">@lang('panel.balls_taken')</label>
+                    <input class="form-control col-6" type="number" name="balls_taken_gk" value="0">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg my-3 mx-aut" style="width:50%">@lang('panel.save')</button>
+          </div>
+
+            
       </form>
 
 
