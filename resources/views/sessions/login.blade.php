@@ -9,11 +9,13 @@
   <!-- Container principal-->
   <div class="container-fluid px-5 py-5" >
 
-    <div class="container border rounded px-5" style="max-width: 500px; background-color: #FFFFFF">
+    <div class="container rounded px-5 contenedor py-3" style="max-width: 500px">
       <section>
-        <img class="img-fluid mx-auto d-block" src="/assets/img/logos/logo2.png" style="height:150px">
-        <h1 class="entry-title text-center text-dark">@lang('login.login')</h1>
-        <hr>
+          
+        <img class="img-fluid mx-auto d-block" src="/assets/img/logos/logo2.png" style="max-height:150px">
+        <hr style="border-color:cyan">
+        <h1 class="entry-title text-center text-light">@lang('login.login')</h1>
+        <hr style="border-color:cyan">
       
         @include('layouts.errors')
 
@@ -24,7 +26,7 @@
 
           <!--USERNAME-->
           <div class="form-group">
-            <label class="col-form-label" for="username" style="color:black">@lang('login.username')<span class="text-danger">*</span></label>
+            <label class="col-form-label text-light" for="username">@lang('login.username')<span class="text-danger">*</span></label>
               <div class="input-group">
                 <input type="text" class="form-control" name="username" id="username" placeholder="@lang('login.usernameHint')" required autofocus>
               </div>
@@ -33,19 +35,19 @@
 
           <!--PASSWORD-->
           <div class="form-group">
-            <label class="control-label" for="password" style="color:black">@lang('login.password') <span class="text-danger">*</span></label>
+            <label class="control-label text-light" for="password">@lang('login.password') <span class="text-danger">*</span></label>
               <div class="input-group">
                 <input type="password" class="form-control" name="password" id="password" placeholder="@lang('login.passwordHint')" required>
               </div>
-              <small><a class="btn btn-link" href="#">@lang('login.forgot')</a></small>
+              <!--<small><a class="btn btn-link" style="color:cyan; word-break:break-all" href="#">@lang('login.forgot')</a></small>-->
           </div>
 
-          <h5 class="text-right" style="color:black">@lang('login.notRegistered')<br>
-            <a href="{{route('register')}}">@lang('login.createAccount')</a></h5>
+          <!--<h5 class="text-right text-light" style="word-break:break-all">@lang('login.notRegistered')--><br>
+            <h5 class="text-right"><a href="{{route('register')}}" style="color:cyan; word-break:break-all">@lang('login.createAccount')</a></h5>
           <br>
       <div class="form-group">
         <div class="d-flex flex-column justify-content-center text-center">
-          <button name="submit" type="submit" class="btn btn-lg acento my-2" style="color:white">@lang('login.login')</button>
+          <button name="submit" type="submit" class="btn btn-lg my-2" style="color:black; background-color:cyan">@lang('login.login')</button>
                 <!--<label>
                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme
                 </label>-->

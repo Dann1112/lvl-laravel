@@ -32,7 +32,7 @@
               </select>
             </div>
     
-            <hr>
+            <hr style="border-color:rgb(51, 119, 255)">
     
             <label style="font-weight: bold; color:white">@lang('players.skills')</label>
             <div class="form-inline justify-content-between my-1">
@@ -78,7 +78,7 @@
               </div>
             </div>
     
-            <hr>
+            <hr style="border-color:rgb(51, 119, 255)">
     
     
             <div class="form-inline justify-content-between my-1">
@@ -372,7 +372,7 @@
               </div>
             </div>
             
-            <hr>
+            <hr style="border-color:rgb(51, 119, 255)">
 
             <div class="form-inline">
                 <label class="ml-auto" style="color:white">@lang('players.orderby') &nbsp;</label>
@@ -390,9 +390,9 @@
                 </select>
               </div>
 
-              <hr>
+              <hr style="border-color:rgb(51, 119, 255)">
     
-            <button class="btn btn-lg my-3" type="submit" style="width: 100%; background-color:gold; color:black">@lang('players.search')</button>
+            <button class="btn btn-lg my-3" type="submit" style="width: 100%; background-color:rgb(51, 119, 255); color:black">@lang('players.search')</button>
             <button class="btn btn-lg " type="submit" style="width: 100%; background-color:white ;color:black">@lang('players.clean')</button>
           </form>
         </div>

@@ -7,11 +7,11 @@
     <body>
         <!-- Container principal-->
         <div class="container-fluid py-2">
-            <div class="container border rounded signup-box px-5 py-2 px-sm-10 col-md-5 col-sm-10 col-xs-12">
-            <section>
+            <div class="container rounded px-5 py-2 px-sm-10 col-md-5 col-sm-10 col-xs-12 contenedor">
+            <section class="text-light" style="color:white">
                     <img class="logo-h1 img-fluid mx-auto d-block my-3" src="/assets/img/logos/logo2.png">
-                    <h1 class="text-center" style="color:black">@lang('register.title')</h1>
-                    <p class="text-center">@lang('register.valuesMarked')(<span class="text-danger">*</span>)@lang('register.areRequired')</p>
+                    <h1 class="text-center">@lang('register.title')</h1>
+                    <p class="text-center text-light">@lang('register.valuesMarked')(<span class="text-danger">*</span>)@lang('register.areRequired')</p>
                     <hr>
 
                     @include('layouts.errors')
@@ -21,35 +21,35 @@
 
                         <!--USERNAME-->
                         <div class="form-group">
-                            <label class="col-form-label" for="username">@lang('register.username')<span class="text-danger">*</span></label>
+                            <label class="col-form-label text-light" for="username">@lang('register.username')<span class="text-danger">*</span></label>
                             <input type="text" data-toggle="tooltip" title="@lang('register.usernameHint')"
                             class="form-control" name="username" placeholder="@lang('register.usernamePlc')" required>
-                            <small>@lang('register.usernameHint')</small>
+                            <small class="text-light">@lang('register.usernameHint')</small>
                         </div>
 
                         <!--EMAIL-->
                         <div class="form-group">
-                            <label class="control-label" for="email">@lang('register.email')<span class="text-danger">*</span></label>
+                            <label class="control-label text-light" for="email">@lang('register.email')<span class="text-danger">*</span></label>
                             <input type="email" class="form-control" name="email" placeholder="@lang('register.emailPlc')" required>
                             <small>@lang('register.emailExplained')</small>
                         </div>
 
                         <!--PASSWORD-->
                         <div class="form-group">
-                            <label class="control-label" for="password">@lang('register.password')<span class="text-danger">*</span></label>
+                            <label class="control-label text-light" for="password">@lang('register.password')<span class="text-danger">*</span></label>
                             <input type="password" class="form-control" name="password" placeholder="@lang('register.passwordPlc')" data-toggle="tooltip" required>
-                            <small>@lang('register.passwordHint')</small>
+                            <small class="text-light">@lang('register.passwordHint')</small>
                         </div>    
 
                         <!--PASSWORD CONFIRMATION-->
                         <div class="form-group">
-                            <label class="control-label" for="password_confirmation">@lang('register.passwordConf')<span class="text-danger">*</span></label>
+                            <label class="control-label text-light" for="password_confirmation">@lang('register.passwordConf')<span class="text-danger">*</span></label>
                             <input type="password" class="form-control" name="password_confirmation" id="cpassword" placeholder="@lang('register.passwordConfPlc')" required>
                         </div>
 
                         <!--FULL NAME-->
                         <div class="form-group">
-                            <label class="control-label" for="full_name">@lang('register.fullName')<span class="text-danger">*</span></label>
+                            <label class="control-label text-light" for="full_name">@lang('register.fullName')<span class="text-danger">*</span></label>
                             <div class="form-inline">
                                 <input type="text" class="form-control" name="name" placeholder="@lang('register.name')" data-toggle="tooltip" required>
                                 <input type="text" class="form-control" name="last_name" placeholder="@lang('register.lastName')" data-toggle="tooltip" required>
@@ -58,7 +58,7 @@
 
                         <!--BIRTH DATE-->
                         <div class="form-group">
-                            <label class="control-label" for="birth_date">@lang('register.birthDate')<span class="text-danger">*</span></label>
+                            <label class="control-label text-light" for="birth_date">@lang('register.birthDate')<span class="text-danger">*</span></label>
                             <div>
                                 <div class="form-inline">
                                     <div class="form-group">
@@ -96,25 +96,25 @@
 
                        <!--GENDER-->
                         <div class="form-group">
-                            <label class="control-label" for="gender">@lang('register.gender')<span class="text-danger"></span></label>
+                            <label class="control-label text-light" for="gender">@lang('register.gender')<span class="text-danger"></span></label>
                             <div>
-                                <label><input name="gender" type="radio" value="M" checked >@lang('register.male')</label>
-                                <label><input name="gender" type="radio" value="F" >@lang('register.female')</label>
+                                <label class="text-light"><input name="gender" type="radio" value="M" checked >@lang('register.male')</label>
+                                <label class="text-light"><input name="gender" type="radio" value="F" >@lang('register.female')</label>
                             </div>
                         </div>
 
                         <!--FOOT-->
-                        <div class="form-group">
-                            <label class="control-label" for="foot">@lang('register.strongFoot')<span class="text-danger"></span></label>
+                        <div class="form-group  text-light">
+                            <label class="control-label text-light" for="foot">@lang('register.strongFoot')<span class="text-danger"></span></label>
                             <div>
-                                <label><input name="strong_foot" type="radio" value="L" checked >@lang('register.left')</label>
-                                <label><input name="strong_foot" type="radio" value="R" >@lang('register.right')</label>
+                                <label class="text-light"><input name="strong_foot" class=" text-light" type="radio" value="L" checked >@lang('register.left')</label>
+                                <label class="text-light"><input name="strong_foot" class=" text-light" type="radio" value="R" >@lang('register.right')</label>
                             </div>
                         </div>
 
                         <!--NATIONALITY-->
                         <div class="form-group" >
-                            <label class="control-label" for="nationality">@lang('register.nationality') <span class="text-danger">*</span></label>
+                            <label class="control-label text-light" for="nationality">@lang('register.nationality') <span class="text-danger">*</span></label>
                             <select name="nationality" class="form-control" required>
                                 <option value="" selected disabled hidden>@lang('register.choose')</option>
                                     <option value="AF">Afghanistan</option>
@@ -378,10 +378,10 @@
                         </div>-->
 
                         <!--PREFERRED POSITION-->
-                        <div class="form-group">
-                            <label class="control-label" for="preferred_position">@lang('register.position')<span class="text-danger">*</span></label>
+                        <br><div class="form-group">
+                            <label class="control-label text-light" for="preferred_position">@lang('register.position')<span class="text-danger">*</span></label>
                             <div class="form-check align-items-center">
-                                <label class="form-check-label" style="color:black"><input class="form-check-input" type="radio" name="position" value="GK">@lang('register.goalkeeper')</label>
+                                <label class="form-check-label" style="color:white"><input class="form-check-input" type="radio" name="position" value="GK">@lang('register.goalkeeper')</label>
                                 <br><br>
                                 <label class="form-check-label" style="color:orange"><input class="form-check-input" type="radio" name="position" value="LB">@lang('register.leftBack')</label><br>
                                 <label class="form-check-label" style="color:orange"><input class="form-check-input" type="radio" name="position" value="CB">@lang('register.centralBack')</label><br>
@@ -402,7 +402,7 @@
                         <br>
                         <hr>
 
-                        <h4 class="text-center" style="font-weight:bold; color:black">@lang('register.dontMiss')</h4>
+                        <h4 class="text-center text-light" style="font-weight:bold">@lang('register.dontMiss')</h4>
                         <span mx-auto>@lang('register.clickHere')</span>
 
                         <div class="fb-page" data-href="https://www.facebook.com/lvlesports" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lvlesports" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lvlesports">Liga Virtual Latinoamericana</a></blockquote></div>
@@ -411,7 +411,7 @@
                             <br>
 
                             <div class="form-group">
-                                    <button type="submit"class="btn btn-primary mx-auto d-block"> @lang('register.title') </button>
+                                    <button type="submit"class="btn btn-lg mx-auto d-block" style="background-color:gold"> @lang('register.title') </button>
                             </div>
                             
                         </div>

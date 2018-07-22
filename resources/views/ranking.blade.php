@@ -128,9 +128,9 @@
 
     <div class="col-md-8 col-12 px-md-3 py-md-0 py-3 px-3 text-center">
 
-      <hr>
+      <hr style="border-color: #E60065">
       <h1 class="display-4" style="color: white">Top @lang('ranking.'.$stat.'')</h1>
-      <hr>
+      <hr style="border-color: #E60065">
 
       @if(isset($teams))
         <form class="col-12 row my-2" method="GET" action='/ranking/clubs/{{$stat}}' enctype="multipart/form-data">
@@ -143,7 +143,7 @@
                     <option value="{{$comp->id}}">{{$comp->name}}</option>
                   @endforeach
               </select>
-              <button type="submit" class="btn btn-lg ml-2" style="background-color:gold; color:black">@lang('panel.show')</button>
+              <button type="submit" class="btn btn-lg ml-2" style="background-color:#E60065; color:black">@lang('panel.show')</button>
       </form>
 
       <table class="table table-dark table-striped table-hover table-responsive-xl">
@@ -183,7 +183,7 @@
           @foreach($players as $player)
           @php $place++; @endphp
           @if($place==1)
-          <tr class="text-center" style="color:black; background-color:gold">
+          <tr class="text-center" style="color:black; background-color:#E60065; color:white">
           @else
           <tr class="text-center">
           @endif

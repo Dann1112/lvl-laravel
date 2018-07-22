@@ -7,5 +7,4 @@ return[
     'forgot' => 'Forgot your Password?',
     'usernameHint' => 'Type your username',
     'passwordHint' => 'Type your password',
-    'notRegistered' => 'Not registered yet?'
 ];
