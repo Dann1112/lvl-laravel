@@ -6,6 +6,7 @@ $username = $url["user"];
 $password = $url["pass"];
 $database = substr($url["path"], 1);
 
+
 return [
 
     /*
@@ -45,7 +46,7 @@ return [
             'prefix' => '',
         ],
 
-        'mysql' => [
+       'mysql' => [
             'driver' => 'mysql',
             'host' => $host,
             'port' => env('DB_PORT', '3306'),

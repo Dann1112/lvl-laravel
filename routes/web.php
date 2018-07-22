@@ -28,6 +28,8 @@ Route::get('/ranking/clubs/{stat}','PlayerStatController@showClubs');
 
 Route::get('/standings','StandingsController@index')->name('standings');
 
+Route::get('/contact',function(){return view('contact');})->name('contact');
+
 Route::get('/register','RegistrationController@create')->name('register');
 Route::post('/register','RegistrationController@store');
 

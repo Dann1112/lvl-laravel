@@ -7,12 +7,6 @@
         <h2 class="my-2">La liga gamer. Tú liga.</h2>
         <hr>
         <hr>
-        <h3>¿QUIENES SOMOS?</h3>
-        <p style="color:white">Somos un conjunto de personas dedicadas a poder llevar hasta tu dispositivo la mejor experiencia competitiva de videojuegos.
-          <br>Nacida como una idea organizada por jóvenes mexicanos, poco a poco la comunidad latina ha apostado por confiar en nostros
-          y es nuestra responsabilidad escucharte, entenderte y ofrecerte la mejor plataforma para tu entretenimiento.
-        </p>
-        <hr>
         <h3 style="color:yellow">Ultima Actualizacion</h3>
         <h4>Junio 2018</h4>
         <p style="color:white">
@@ -21,14 +15,5 @@
         </p>
       
         <hr>
-        <h2>Mejora tu liga, envia tu sugerencia</h2>
-        <p style="color:white">Esta liga se forma por gamers, para gamers. Esta liga crecerá lo mucho que tu quieras, si crecemos nosotros, crecerás eventualmente tu.
-          Manda cualquier sugerencia que tengas sobre lo que te gustaría ver en la página junto con tu nombre de usuario y más adelante prometemos
-          enviar un presente por tu colaboración.
-        </p>
-        <a href="mailto:contacto@lvlesports.com"><button class="btn btn-lg acento" style="color:white">Enviar Sugerencia</button></a>
-        <h3 class="display-4 my-2">¡ Gracias !</h3>
-        <hr>
-      
       </div>
 @endsection
