@@ -29,29 +29,29 @@
         {{csrf_field()}}
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="name">@lang('panel.name')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="name">@lang('panel.name')&nbsp<span class="text-danger">*</span></label>
               <input type="text" class="form-control col-10" name="name" required>
               <br>
             </div>
 
             <div class="form-row text-center my-2">
-            <label class="col-form-label col-2 " for="start_date">@lang('panel.start_date')&nbsp<span class="text-danger">*</span></label>
+            <label class="col-form-label col-2  text-light" for="start_date">@lang('panel.start_date')&nbsp<span class="text-danger">*</span></label>
               <input type="date" class="form-control col-10" name="start_date" required>
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="end_date">@lang('panel.end_date')</label>
+              <label class="col-form-label col-2 text-light" for="end_date">@lang('panel.end_date')</label>
               <input type="date" class="form-control col-10" name="end_date">
               
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="prize">@lang('panel.prize')</label>
+              <label class="col-form-label col-2 text-light" for="prize">@lang('panel.prize')</label>
               <input type="number" class="form-control col-10" name="prize">
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="champion">@lang('panel.champion')</label>
+              <label class="col-form-label col-2 text-light" for="champion">@lang('panel.champion')</label>
               <input type="text" class="form-control col-10" name="champion" >
             </div>
 

@@ -27,6 +27,7 @@ Route::get('/ranking/{stat}','PlayerStatController@show')->name('ranking');
 Route::get('/ranking/clubs/{stat}','PlayerStatController@showClubs');
 
 Route::get('/standings','StandingsController@index')->name('standings');
+Route::get('/standings/{id}','StandingsController@show');
 
 Route::get('/contact',function(){return view('contact');})->name('contact');
 

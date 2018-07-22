@@ -29,7 +29,7 @@
         {{csrf_field()}}
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="competition">@lang('panel.competition')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="competition">@lang('panel.competition')&nbsp<span class="text-danger">*</span></label>
               <select class="form-control col-10" name="competition">
                   <option selected disabled hidden>@lang('panel.choose_option')</option>
                   @foreach($competition as $comp)
@@ -40,7 +40,7 @@
             </div>
 
             <div class="form-row text-center my-2">
-            <label class="col-form-label col-2 " for="start_date">@lang('panel.status')&nbsp<span class="text-danger">*</span></label>
+            <label class="col-form-label col-2  text-light" for="start_date">@lang('panel.status')&nbsp<span class="text-danger">*</span></label>
               <select class="form-control col-3" name="status">
                     <option selected disabled hidden>@lang('panel.choose_option')</option>
                     <option value="0">@lang('panel.unstarted')</option>
@@ -48,7 +48,7 @@
                     <option value="2">@lang('panel.finished')</option>
                     <option value="3">@lang('panel.postponed')</option>
               </select>
-              <label class="col-form-label col-2 " for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2  text-light" for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
               <input class="form-control col-2" type="text" name="matchday">
             </div>
 
@@ -76,9 +76,9 @@
             <hr class="border" style="color:white">
 
             <div class="form-row text-center justify-content-around my-2">
-              <label class="col-form-label col-2" for="date">@lang('panel.date')</label>
+              <label class="col-form-label col-2 text-light" for="date">@lang('panel.date')</label>
               <input type="date" class="form-control col-3" name="date">
-              <label class="col-form-label col-2" for="time">@lang('panel.time')</label>
+              <label class="col-form-label col-2 text-light" for="time">@lang('panel.time')</label>
               <input type="time" class="form-control col-3" name="time" >
             </div>
 

@@ -38,9 +38,9 @@
                   
                   
               </select>
-              <label class="col-form-label col-1 " for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-1  text-light" for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
               <input class="form-control col-2" type="text" name="matchday">
-              <label class="col-form-label col-1 " for="player">@lang('panel.player')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-1  text-light" for="player">@lang('panel.player')&nbsp<span class="text-danger">*</span></label>
               <select class="form-control col-3" name="player">
                 <option selected disabled hidden>@lang('panel.choose_option')</option>
                 @foreach($players as $player)
@@ -58,39 +58,39 @@
                 <h3>@lang('panel.attack')</h3>
                 <hr>
                 <div class="container col-11 d-flex ">
-                  <label class="col-form-label col-6 " for="goals">@lang('panel.goals')</label>
+                  <label class="col-form-label col-6  text-light" for="goals">@lang('panel.goals')</label>
                   <input class="form-control col-6" type="number" name="goals" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="shots_on_target">@lang('panel.shots_on_target')</label>
+                    <label class="col-form-label col-6  text-light" for="shots_on_target">@lang('panel.shots_on_target')</label>
                     <input class="form-control col-6" type="number" name="shots_on_target" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="shots_away">@lang('panel.shots_away')</label>
+                    <label class="col-form-label col-6  text-light" for="shots_away">@lang('panel.shots_away')</label>
                     <input class="form-control col-6" type="number" name="shots_away" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="assists">@lang('panel.assists')</label>
+                    <label class="col-form-label col-6  text-light" for="assists">@lang('panel.assists')</label>
                     <input class="form-control col-6" type="number" name="assists" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="completed_passes">@lang('panel.completed_passes')</label>
+                    <label class="col-form-label col-6  text-light" for="completed_passes">@lang('panel.completed_passes')</label>
                     <input class="form-control col-6" type="number" name="completed_passes" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="failed_passes">@lang('panel.failed_passes')</label>
+                    <label class="col-form-label col-6  text-light" for="failed_passes">@lang('panel.failed_passes')</label>
                     <input class="form-control col-6" type="number" name="failed_passes" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="completed_crosses">@lang('panel.completed_crosses')</label>
+                    <label class="col-form-label col-6  text-light" for="completed_crosses">@lang('panel.completed_crosses')</label>
                     <input class="form-control col-6" type="number" name="completed_crosses" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="failed_crosses">@lang('panel.failed_crosses')</label>
+                    <label class="col-form-label col-6  text-light" for="failed_crosses">@lang('panel.failed_crosses')</label>
                     <input class="form-control col-6" type="number" name="failed_crosses" value="0">
                 </div>
                 <div class="container col-11 d-flex ">
-                    <label class="col-form-label col-6 " for="fouls_received">@lang('panel.fouls_received')</label>
+                    <label class="col-form-label col-6  text-light" for="fouls_received">@lang('panel.fouls_received')</label>
                     <input class="form-control col-6" type="number" name="fouls_received" value="0">
                 </div>
                 

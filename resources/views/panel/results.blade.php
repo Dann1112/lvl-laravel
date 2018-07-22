@@ -29,7 +29,7 @@
         {{csrf_field()}}
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="competition">@lang('panel.competition')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="competition">@lang('panel.competition')&nbsp<span class="text-danger">*</span></label>
               <select class="form-control col-4" name="competition">
                   <option selected disabled hidden>@lang('panel.choose_option')</option>
                   @foreach($competition as $comp)
@@ -37,7 +37,7 @@
                   @endforeach
               </select>
               <br>
-            <label class="col-form-label col-2 " for="start_date">@lang('panel.status')&nbsp<span class="text-danger">*</span></label>
+            <label class="col-form-label col-2  text-light" for="start_date">@lang('panel.status')&nbsp<span class="text-danger">*</span></label>
             <select class="form-control col-2" name="status">
                     <option value="0">@lang('panel.unstarted')</option>
                     <option selected value="1">@lang('panel.live')</option>

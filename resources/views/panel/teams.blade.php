@@ -29,33 +29,33 @@
         {{csrf_field()}}
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="name">@lang('panel.name')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="name">@lang('panel.name')&nbsp<span class="text-danger">*</span></label>
               <input type="text" class="form-control col-10" name="name" required>
               <br>
             </div>
 
             <div class="form-row text-center my-2">
-            <label class="col-form-label col-2 " for="abbreviation">@lang('panel.abbreviation')&nbsp<span class="text-danger">*</span></label>
+            <label class="col-form-label col-2  text-light" for="abbreviation">@lang('panel.abbreviation')&nbsp<span class="text-danger">*</span></label>
               <input type="text" class="form-control col-10" name="abbreviation" style="max-width:100px" required>
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="manager">@lang('panel.manager')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="manager">@lang('panel.manager')&nbsp<span class="text-danger">*</span></label>
               <input type="text" class="form-control col-10" name="manager" required>
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="comanager">@lang('panel.comanager')</label>
+              <label class="col-form-label col-2 text-light" for="comanager">@lang('panel.comanager')</label>
               <input type="text" class="form-control col-10" name="comanager">
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="streaming_channel">@lang('panel.streaming_channel')</label>
+              <label class="col-form-label col-2 text-light" for="streaming_channel">@lang('panel.streaming_channel')</label>
               <input type="text" class="form-control col-10" name="streaming_channel" >
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="primary_color">@lang('panel.primary_color')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="primary_color">@lang('panel.primary_color')&nbsp<span class="text-danger">*</span></label>
               <input type="color" class="form-control col-10" name="primary_color" required>
             </div>
 
@@ -65,27 +65,27 @@
             </div>-->
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="twitter">@lang('panel.twitter')</label>
+              <label class="col-form-label col-2 text-light" for="twitter">@lang('panel.twitter')</label>
               <input type="text" class="form-control col-10" name="twitter" >
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="Facebook">@lang('panel.facebook')</label>
+              <label class="col-form-label col-2 text-light" for="Facebook">@lang('panel.facebook')</label>
               <input type="text" class="form-control col-10" name="facebook" >
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="twitch">@lang('panel.twitch')</label>
+              <label class="col-form-label col-2 text-light" for="twitch">@lang('panel.twitch')</label>
               <input type="text" class="form-control col-10" name="twitch" >
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="youtube">@lang('panel.youtube')</label>
+              <label class="col-form-label col-2 text-light" for="youtube">@lang('panel.youtube')</label>
               <input type="text" class="form-control col-10" name="youtube" >
             </div>
 
             <div class="form-row text-center my-2">
-              <label class="col-form-label col-2" for="instagram">@lang('panel.instagram')</label>
+              <label class="col-form-label col-2 text-light" for="instagram">@lang('panel.instagram')</label>
               <input type="text" class="form-control col-10" name="instagram" >
             </div>
 
