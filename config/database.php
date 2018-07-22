@@ -1,10 +1,10 @@
 <?php
 
-/*$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $host = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
-$database = substr($url["path"], 1);*/
+$database = substr($url["path"], 1);
 
 
 return [
@@ -47,7 +47,7 @@ return [
         ],
 
        'mysql' => [
-            /*'driver' => 'mysql',
+            'driver' => 'mysql',
             'host' => $host,
             'port' => env('DB_PORT', '3306'),
             'database' => $database,
@@ -58,9 +58,9 @@ return [
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => true,
-            'engine' => null,*/
+            'engine' => null,
 
-            'driver' => 'mysql',
+            /*'driver' => 'mysql',
             'host' => env('RDS_HOSTNAME', '127.0.0.1'),
             'port' => env('RDS_PORT', '3306'),
             'database' => env('RDS_DB_NAME', 'lvl'),
@@ -71,7 +71,7 @@ return [
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => true,
-            'engine' => null,
+            'engine' => null,*/
         ],
 
         
