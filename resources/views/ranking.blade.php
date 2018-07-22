@@ -128,23 +128,22 @@
 
     <div class="col-md-8 col-12 px-md-3 py-md-0 py-3 px-3 text-center">
 
-      <hr style="border-color: white">
+      <hr>
       <h1 class="display-4" style="color: white">Top @lang('ranking.'.$stat.'')</h1>
-      <hr style="border-color: white">
+      <hr>
 
       @if(isset($teams))
         <form class="col-12 row my-2" method="GET" action='/ranking/clubs/{{$stat}}' enctype="multipart/form-data">
       @else
         <form class="col-12 row my-2" method="GET" action='/ranking/{{$stat}}' enctype="multipart/form-data">
       @endif
-            <label class="col-form-label ml-auto col-2" for="competition">@lang('panel.competition')&nbsp: </label>
-              <select class="form-control col-3" name="competition">
+              <select class="form-control ml-auto col-3" name="competition">
                     <option selected disabled hidden>@lang('panel.choose_option')</option>
                   @foreach($competitions as $comp)
                     <option value="{{$comp->id}}">{{$comp->name}}</option>
                   @endforeach
               </select>
-              <button type="submit" class="btn btn-primary btn-lg ml-2">@lang('panel.show')</button>
+              <button type="submit" class="btn btn-lg ml-2" style="background-color:gold; color:black">@lang('panel.show')</button>
       </form>
 
       <table class="table table-dark table-striped table-hover table-responsive-xl">
@@ -184,7 +183,7 @@
           @foreach($players as $player)
           @php $place++; @endphp
           @if($place==1)
-          <tr class="text-center bg-success">
+          <tr class="text-center" style="color:black; background-color:gold">
           @else
           <tr class="text-center">
           @endif

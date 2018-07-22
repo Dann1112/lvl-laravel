@@ -7,7 +7,7 @@
         <h2 class="my-2">Tu momento es ahora</h2>
         <hr>
         <hr>
-        <h3 style="color:yellow">ULTIMAS ACTUALIZACIONES</h3>
+        <h3 style="color:gold">ULTIMAS ACTUALIZACIONES</h3>
         <h4>Julio 2018</h4>
         <p style="color:white">
           - La comunidad puede ver las estadísticas de sus equipos en "Clasificacion"<br>

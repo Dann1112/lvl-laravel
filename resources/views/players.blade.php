@@ -392,8 +392,8 @@
 
               <hr>
     
-            <button class="btn btn-primary btn-lg my-3" type="submit" style="width: 100%">@lang('players.search')</button>
-            <button class="btn btn-warning btn-lg " type="submit" style="width: 100%">@lang('players.clean')</button>
+            <button class="btn btn-lg my-3" type="submit" style="width: 100%; background-color:gold; color:black">@lang('players.search')</button>
+            <button class="btn btn-lg " type="submit" style="width: 100%; background-color:white ;color:black">@lang('players.clean')</button>
           </form>
         </div>
     

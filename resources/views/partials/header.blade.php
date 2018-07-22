@@ -61,7 +61,7 @@
 
 		@else
 		<div class="col-2 p-0 d-none d-md-flex flex-column align-items-center justify-content-around">
-				<a href="{{route('login')}}" class="btn acento" style="width:80%; font-weight:bold; color:white"><i class="fas fa-sign-in-alt mr-2"></i>@lang('header.signin')</a>
+				<a href="{{route('login')}}" class="btn acento" style="width:80%; font-weight:bold; color:black"><i class="fas fa-sign-in-alt mr-2"></i>@lang('header.signin')</a>
 		</div>
 		@endif
 

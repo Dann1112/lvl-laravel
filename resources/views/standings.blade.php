@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Filter Options-->
-<div class="container-fluid py-3 col-sm-10 col-12 mx-auto contenedor">
+<div class="container-fluid py-3 col-sm-10 col-12 mx-auto my-3 contenedor">
 
         <div class="container d-flex justify-content-between p-3 mb-1">
           <select class="custom-select" id="inputGroupSelect01">
@@ -38,7 +38,7 @@
                   @foreach($teams as $team)
                   @if($stand->team == $team->id)
                   @if($cont==1)
-                  <tr style="background-color:lawngreen; color:black">
+                  <tr style="background-color:gold; color:black">
                     @else
                     <tr>
                       @endif
