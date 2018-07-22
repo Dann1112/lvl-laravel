@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="container contenedor text-center my-3 py-3">
+<div class="container text-center my-3 py-3">
         <hr><hr>
         <h1 style="word-break: break-all">LIGA VIRTUAL LATINOAMERICANA<h1>
         <h2 class="my-2">La liga gamer. Tú liga.</h2>

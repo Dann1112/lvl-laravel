@@ -5,7 +5,7 @@
 :root{
 	--back-color: #00D9F4; 
 	--primary-color:#003137;
-	--accent-color-1: #E60065;
+	--accent-color-1: yellow;
 	--back-color-2: #032A8B;
 }
 
@@ -106,6 +106,6 @@ footer{
 }
 
 hr{
-	border-color: white;
+	border-color: var(--accent-color-1);
 	border-radius: 1px;
 }
