@@ -24,7 +24,7 @@
 
           <!--USERNAME-->
           <div class="form-group">
-            <label class="col-form-label" for="username">@lang('login.username')<span class="text-danger">*</span></label>
+            <label class="col-form-label" for="username" style="color:black">@lang('login.username')<span class="text-danger">*</span></label>
               <div class="input-group">
                 <input type="text" class="form-control" name="username" id="username" placeholder="@lang('login.usernameHint')" required autofocus>
               </div>
@@ -33,7 +33,7 @@
 
           <!--PASSWORD-->
           <div class="form-group">
-            <label class="control-label" for="password">@lang('login.password') <span class="text-danger">*</span></label>
+            <label class="control-label" for="password" style="color:black">@lang('login.password') <span class="text-danger">*</span></label>
               <div class="input-group">
                 <input type="password" class="form-control" name="password" id="password" placeholder="@lang('login.passwordHint')" required>
               </div>

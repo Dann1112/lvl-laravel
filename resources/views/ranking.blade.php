@@ -2,9 +2,9 @@
 
 @section('content')
 
-  <div class="row d-flex my-3 col-sm-10 col-12 mx-auto" style="background-color: black">
+  <div class="row d-flex my-3 col-sm-10 col-12 mx-auto rounded contenedor">
 
-    <div class="p-3 col-md-4 col-12 border-radius rounded" style="background-color: black">
+    <div class="p-3 col-md-4 col-12 border-radius rounded contenedor">
 
         <div id="accordion" role="tablist">
         <div class="card" style="background-color: rgba(255,255,255,.2)">
@@ -126,7 +126,7 @@
     </div>
 
 
-    <div class="col-md-8 col-12 px-md-3 py-md-0 py-3 px-3 text-center" style="background-color: black">
+    <div class="col-md-8 col-12 px-md-3 py-md-0 py-3 px-3 text-center">
 
       <hr style="border-color: white">
       <h1 class="display-4" style="color: white">Top @lang('ranking.'.$stat.'')</h1>

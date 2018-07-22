@@ -9,12 +9,12 @@
         <form method="GET" action="{{route('search_results')}}">
 
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.name')</label>
+              <label for="pname" style="color:white">@lang('players.name')</label>
               <input type="text" class="form-control" id="pname" placeholder="Nombre del jugador"  style="width: 150px" name="username"  value="{{request('username')}}">
             </div>
 
             <div class="form-inline justify-content-between">
-              <label for="pposition">@lang('players.position')</label>
+              <label for="pposition" style="color:white">@lang('players.position')</label>
               <select class="form-control" id="position" style="width: 150px" name="position">
                 <option selected value="">@lang('players.any')</option>
                 <option value="GK">@lang('position.GK')</option>
@@ -34,44 +34,44 @@
     
             <hr>
     
-            <label style="font-weight: bold">@lang('players.skills')</label>
+            <label style="font-weight: bold; color:white">@lang('players.skills')</label>
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.pace')</label>
+              <label for="pname" style="color:white">@lang('players.pace')</label>
               <div>
               <input type="number"  min="0" max="99" class="form-control" id="pminpace" placeholder="Min" style="width: 73px" name="minPace" value="{{request('minPace')}}">
                 <input type="number" min="0" max="99" class="form-control" id="pmaxpace" placeholder="Max" style="width: 73px" name="maxPace" value="{{request('maxPace')}}">
               </div>
             </div>
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.shooting')</label>
+              <label for="pname" style="color:white">@lang('players.shooting')</label>
               <div>
                 <input type="number" min="0" max="99" class="form-control" id="pminshooting" placeholder="Min" style="width: 73px" name="minShooting" value="{{request('minShooting')}}">
                 <input type="number" min="0" max="99" class="form-control" id="pminshooting" placeholder="Max" style="width: 73px" name="maxShooting" value="{{request('maxShooting')}}">
               </div>
             </div>
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.passing')</label>
+              <label for="pname" style="color:white">@lang('players.passing')</label>
               <div>
                 <input type="number" min="0" max="99" class="form-control" id="pminpassing" placeholder="Min" style="width: 73px" name="minPassing" value="{{request('minPassing')}}">
                 <input type="number" min="0" max="99" class="form-control" id="pminpassing" placeholder="Max" style="width: 73px" name="maxPassing" value="{{request('maxPassing')}}">
               </div>
             </div>
-            <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.dribbling')</label>
+            <div class="form-inline justify-content-between my-1" style="color:white">
+              <label for="pname" style="color:white">@lang('players.dribbling')</label>
               <div>
                 <input type="number" min="0" max="99" class="form-control" id="pmindribbling" placeholder="Min" style="width: 73px" name="minDribbling" value="{{request('minDribbling')}}">
                 <input type="number" min="0" max="99" class="form-control" id="pmindribbling" placeholder="Max" style="width: 73px" name="maxDribbling" value="{{request('maxDribbling')}}">
               </div>
             </div>
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.defense')</label>
+              <label for="pname" style="color:white">@lang('players.defense')</label>
               <div>
                 <input type="number" min="0" max="99" class="form-control" id="pmindefense" placeholder="Min" style="width: 73px" name="minDefense" value="{{request('minDefense')}}">
                 <input type="number" min="0" max="99" class="form-control" id="pmaxdefense" placeholder="Max" style="width: 73px" name="maxDefense" value="{{request('maxDefense')}}">
               </div>
             </div>
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.physical')</label>
+              <label for="pname" style="color:white">@lang('players.physical')</label>
               <div>
                 <input type="number" min="0" max="99" class="form-control" id="pminphysical" placeholder="Min" style="width: 73px" name="minPhysical" value="{{request('minPhysical')}}">
                 <input type="number" min="0" max="99" class="form-control" id="pmaxphysical" placeholder="Max" style="width: 73px" name="maxPhysical" value="{{request('maxPhysical')}}">
@@ -82,7 +82,7 @@
     
     
             <div class="form-inline justify-content-between my-1">
-              <label for="pheight">@lang('players.height')&nbsp;(cm)</label>
+              <label for="pheight" style="color:white">@lang('players.height')&nbsp;(cm)</label>
               <div>
                   <input type="number" min="160" max="250" class="form-control" id="pminheight" placeholder="Min" style="width: 73px" name="minHeight" value="{{request('minHeight')}}">
                   <input type="number" min="160" max="250" class="form-control" id="pmaxheight" placeholder="Max" style="width: 73px" name="maxHeight" value="{{request('maxHeight')}}">
@@ -90,7 +90,7 @@
             </div>
 
             <div class="form-inline justify-content-between my-1">
-              <label for="pfoot">@lang('players.strong_foot')</label>
+              <label for="pfoot"style="color:white">@lang('players.strong_foot')</label>
               <select class="custom-select" style="width: 150px" name="strong_foot">
                 <option value="">@lang('players.any')</option>
                 <option value="L">@lang('players.left')</option>
@@ -99,7 +99,7 @@
             </div>
     
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.language')</label>
+              <label for="pname"style="color:white">@lang('players.language')</label>
               <select class="custom-select" style="width: 150px" name="language">
                 <option value="">@lang('players.any')</option>
                 <option value="es">@lang('players.spanish')</option>
@@ -109,7 +109,7 @@
             </div>
 
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.nationality')</label>
+              <label for="pname" style="color:white">@lang('players.nationality')</label>
               <select name="nationality" class="form-control" style="width:150px">
                     <option value="" selected>@lang('players.any')</option>
                       <option value="AF">Afghanistan</option>
@@ -365,7 +365,7 @@
             </div>
 
             <div class="form-inline justify-content-between my-1">
-              <label for="pname">@lang('players.overall')</label>
+              <label for="pname" style="color:white">@lang('players.overall')</label>
               <div>
               <input type="text" min="0" max="99" class="form-control" id="pminclausule" placeholder="Min" style="width: 73px" name="minOverall" value="{{request('minOverall')}}">
               <input type="text" min="0" max="99" class="form-control" id="pmaxclausule" placeholder="Max" style="width: 73px" name="maxOverall" value="{{request('maxOverall')}}">
@@ -375,7 +375,7 @@
             <hr>
 
             <div class="form-inline">
-                <label class="ml-auto">@lang('players.orderby') &nbsp;</label>
+                <label class="ml-auto" style="color:white">@lang('players.orderby') &nbsp;</label>
                 <select class="form-control" name="orderby">
                   <option value="overall" selected>@lang('players.overall')</option>
                   <option value="username" >@lang('players.name')</option>
@@ -431,7 +431,7 @@
                         foreach ($ts as $t){
                           $ts2 = \App\Team::where('id',$t->team)->get();
                           foreach($ts2 as $t2){
-                            echo('<td><img style="max-height:30px; max-width:30px" src="/storage/'.$t2->logo.'"></td>');
+                            echo('<td class="img-fluid"><span class="badge" style="background-color:'.$t2->primary_color.'; color:black; font-weight:bold">'.$t2->abbreviation.'</span></td>');
                           }
                         }
                       }
