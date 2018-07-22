@@ -31,7 +31,7 @@
 						<a class="nav-link" href="{{route('players')}}" style="color:white; text-decoration:none; font-weight: bold">@lang('header.players')</a>
 					</li>
 					<li class="nav-item border-bottom">
-						<a class="nav-link" href="/rankings/goals" style="color:white; text-decoration:none; font-weight: bold">@lang('header.ranking')</a>
+						<a class="nav-link" href="/ranking/goals" style="color:white; text-decoration:none; font-weight: bold">@lang('header.ranking')</a>
 					</li>
 					<li class="nav-item border-bottom">
 						<a class="nav-link" href="{{route('contact')}}" style="color:white; text-decoration:none; font-weight: bold">@lang('header.contact')</a>
