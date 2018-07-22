@@ -29,8 +29,6 @@ body{
 	background-image: url("/assets/img/bg_dark.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color:var(--back-color);
-	background-blend-mode: multiply;
 	font-family: 'Roboto', sans-serif;
 }
 
