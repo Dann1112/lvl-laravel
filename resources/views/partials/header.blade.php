@@ -22,7 +22,7 @@
 								<a class="nav-link " href="/ranking/goals">@lang('header.ranking')</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link " href="/contact">@lang('header.contact')</a>
+								<a class="nav-link " href="{{route('contact')}}">@lang('header.contact')</a>
 							</li>
 					  </ul>
 
