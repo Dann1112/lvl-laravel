@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <div class="row d-flex align-items-center">
         <div class="col-12 col-lg-4 text-center p-3">
-          <img src="/assets/img/logos/gmr_blanco.png" class="img-fluid" style="max-height: 150px">
+          <img src="/assets/img/logos/GMR_BLANCO.png" class="img-fluid" style="max-height: 150px">
         </div>
 
         <div class="col-12 col-lg-8 text-center p-3">

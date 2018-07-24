@@ -12,7 +12,7 @@
     <div class="container rounded px-5 contenedor py-3" style="max-width: 500px">
       <section>
           
-        <img class="img-fluid mx-auto d-block" src="/assets/img/logos/gmr_blanco_2.png" style="max-height:150px">
+        <img class="img-fluid mx-auto d-block" src="/assets/img/logos/GMR_BLANCO_2.png" style="max-height:150px">
         <hr style="border-color:cyan">
         <h1 class="entry-title text-center text-light">@lang('login.login')</h1>
         <hr style="border-color:cyan">

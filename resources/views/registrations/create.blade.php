@@ -9,7 +9,7 @@
         <div class="container-fluid py-2">
             <div class="container rounded px-5 py-2 px-sm-10 col-md-5 col-sm-10 col-xs-12 contenedor">
             <section class="text-light" style="color:white">
-                    <img class="logo-h1 img-fluid mx-auto d-block my-3" src="/assets/img/logos/logo2.png">
+                    <img class="logo-h1 img-fluid mx-auto d-block my-3" src="/assets/img/logos/GMR_BLANCO.png">
                     <h1 class="text-center">@lang('register.title')</h1>
                     <p class="text-center text-light">@lang('register.valuesMarked')(<span class="text-danger">*</span>)@lang('register.areRequired')</p>
                     <hr>
