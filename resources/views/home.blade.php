@@ -10,8 +10,8 @@
         <h3 style="color:gold">ULTIMAS ACTUALIZACIONES</h3>
         <h4>Julio 2018</h4>
         <p style="color:white">
-          - La comunidad puede ver las estadísticas de sus equipos en "Clasificacion"<br>
-          - La comunidad puede realizar su registro en el portal, con el cual después podrá hacer uso de mayores funcionalidades
+          - Los jugadores pueden ver un ranking detallato de su participación en el torneo jornada tras jornada<br>
+          - Los jugadores pueden ver los rankings correspondientes a las estadísticas acumuladas de sus equipos
         </p>
       
         <h4>Junio 2018</h4>

@@ -70,7 +70,7 @@
 	<div class="container-fluid row d-md-none p-0">
 
 			<div class="col-12 d-flex justify-content-center" style="height:100%">
-					<img class="my-auto mx-auto" src="/assets/img/logos/GMR_BLANCO.png" style="max-width:70%; max-height:95%">
+					<img class="my-auto mx-auto" src="/assets/img/logos/GMR_BLANCO_2.png" style="max-width:70%; max-height:95%">
 			</div>
 
 			
