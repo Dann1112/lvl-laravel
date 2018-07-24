@@ -3,7 +3,7 @@
 	<div class="container-fluid row d-none d-md-flex">
 
 		<div class="col-3 d-flex justify-content-center" style="height:100%">
-				<img class="my-auto mx-auto" src="/assets/img/logos/logo2.png" style="max-width:70%; max-height:95%">
+				<img class="my-auto mx-auto" src="/assets/img/logos/gmr_blanco_2.png" style="max-width:70%; max-height:95%">
 
 		</div>
 		<div class="col-7 p-0 d-flex justify-content-around" style="height:100%">
