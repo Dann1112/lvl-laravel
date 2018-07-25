@@ -1,7 +1,7 @@
 <?php
 return [
     'home' => 'INICIO',
-    'standings' => 'CLASIFICACION',
+    'standings' => 'TABLA',
     'players' => 'JUGADORES',
     'contact' => 'CONTACTO',
     'ranking' => 'RANKING',

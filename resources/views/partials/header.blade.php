@@ -8,7 +8,7 @@
 		</div>
 		<div class="col-7 p-0 d-flex justify-content-around" style="height:100%">
 
-				<ul class="nav nav-pills nav-fill my-auto" style="width:90%">
+				<ul class="nav nav-pills nav-fill my-auto" style="width:100%">
 							<li class="nav-item">
 								<a class="nav-link" href="{{route('home')}}">@lang('header.home')</a>
 							</li>
