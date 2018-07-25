@@ -2,7 +2,7 @@
 
   @section('content')
   
-  <div class="container rounder py-3" style="background-color: rgba(0,0,0,.5)">
+  <div class="container rounded py-3" style="background-color: rgba(0,0,0,.5)">
 
        <div class="row p-3">
       <div class="col-3 text-center rounded-circle p-3" style="background-image: url('/assets/img/bg_light.jpg'); height:300px">
@@ -10,7 +10,7 @@
       </div>
       <div class="col-9 text-center my-auto" style="">
         <div class="d-flex justify-content-center">
-          <h1 class="display-3 my-auto mx-3" style="color:white">{{$player->username}}</h1>
+          <h1 class="display-4 my-auto mx-3" style="color:white">{{$player->username}}</h1>
           <img class="rounded my-auto" src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="height:50px; width:100px">
 
           
@@ -43,7 +43,7 @@
 
     <div class="row p-3">
       <div class="col-3">
-        <div class="card text-center">
+        <div class="card text-center contenedor">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">@lang('profile.team'):<br>
               <?php $ts = \App\Inscription::where('player',$player->username)->get();
@@ -78,7 +78,7 @@
         <hr class="border" style="color:white">
         <h1 class="text-center" style="color:white">@lang('profile.latest_news')</h1>
         <div class="d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
+          <div class="card contenedor" style="width: 18rem">
             <img class="card-img-top mx-auto" src="/storage/{{$player->profile_picture}}" alt="Card image cap" style="max-width:100px; max-height:100px">
             <div class="card-body">
               <p class="card-text font-italic">@lang('profile.coming_soon')</p>
