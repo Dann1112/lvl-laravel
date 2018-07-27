@@ -108,7 +108,7 @@ class PlayerController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Player $player){
-        
+
         return view('players.profile',compact(['player','stats']));
     }
 

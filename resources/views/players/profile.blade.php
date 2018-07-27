@@ -1,96 +1,61 @@
   @extends('layouts.layout')
 
   @section('content')
+
   
-  <div class="container rounded py-3" style="background-color: rgba(0,0,0,.5)">
+  
+  <div class="container rounded py-3 my-3 contenedor">
 
-       <div class="row p-3">
-      <div class="col-3 text-center rounded-circle p-3" style="background-image: url('/assets/img/bg_light.jpg'); height:300px">
-      <img class="image-fluid rounded-circle" alt="{{$player->username}}" src="/assets/img/generic.png" style="height:100%; max-width:100%; ">
-      </div>
-      <div class="col-9 text-center my-auto" style="">
-        <div class="d-flex justify-content-center">
-          <h1 class="display-4 my-auto mx-3" style="color:white">{{$player->username}}</h1>
-          <img class="rounded my-auto" src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="height:50px; width:100px">
 
-          
-        </div>
-        @if(Auth::check())
-        @if(Auth::user()->role == '1' && Auth::user()->username !== $player->username)
+    <hr>
+      <span class="badge p-2 bg-warning mx-auto" style="font-weight:bold; width:100%"><h2 class="display-5 my-auto mx-3 text-dark" style="width:100%">PAGINA EN CONSTRUCCION. ENVIA TUS SUGERENCIAS</h2> </span>
+    <hr>
+    <hr>
 
-        @if(count($errors))
-            <div class="form-group">
-                <div class="alert alert-danger">
-                    <ul>
-                        <li>@lang('profile.player_inscribed')</li>
-                    </ul>
-                </div>
+    <div class="row">
+
+        <div class="col-12 col-md-8">
+            <div class="row p-3 d-flex justify-content-center">
+                <h1 class="display-3 my-auto mx-3" style="color:white">{{$player->username}}</h1>
+                <img class="rounded my-auto" src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="height:50px; width:100px">
             </div>
-        @endif
-
-        <form class="text-center" method="POST" action="{{route('club_request')}}" enctype="multipart/form-data">
-          {{ csrf_field() }}
-          <input type="hidden" name="username" value={{$player->username}}>
-          <button type="submit" class="btn btn-primary btn-lg" style="width:50%">@lang('profile.invite')</button>
-        </form>
-        @endif
-        @endif
-        
-      </div>
-    </div>
-
-
-
-    <div class="row p-3">
-      <div class="col-3">
-        <div class="card text-center contenedor">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">@lang('profile.team'):<br>
-              <?php $ts = \App\Inscription::where('player',$player->username)->get();
-                  if($ts->count() > 0){
-                        foreach ($ts as $t){ 
-                          $ts2 = \App\Team::where('id',$t->team)->get();
-                          foreach($ts2 as $t2){
-                            echo('<img src="/storage/'.$t2->logo.'" style="max-width:30px; max-height: 30px">&nbsp;'.$t2->name.'</li>');
-                          }
-                        }
-                      }
-                      else{
-                        echo('<td>N/A</td>');
-                      }
-                        
-                        ?>
-            <li class="list-group-item">@lang('profile.positions'):<br>
-              @include('partials.positions')
-            @if($player->second_position)
-              <span class="badge badge-success">{{$player->second_position}}</span>
-            @endif
-            @if($player->third_position)
-              <span class="badge badge-success">{{$player->third_position}}</span>
-              @endif
-            </li>
-            <li class="list-group-item">@lang('profile.birth_date'):<br>{{$player->birth_date}}</li>
-            <li class="list-group-item">@lang('profile.height'):<br>{{$player->height}} cm</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-9 text-center">
-        <hr class="border" style="color:white">
-        <h1 class="text-center" style="color:white">@lang('profile.latest_news')</h1>
-        <div class="d-flex justify-content-center">
-          <div class="card contenedor" style="width: 18rem">
-            <img class="card-img-top mx-auto" src="/storage/{{$player->profile_picture}}" alt="Card image cap" style="max-width:100px; max-height:100px">
-            <div class="card-body">
-              <p class="card-text font-italic">@lang('profile.coming_soon')</p>
+            <div class="row d-flex justify-content-center">
+                <!--<span class="badge p-2" style="background-color:gray;font-weight:bold"><h2 class="display-4 my-auto mx-3" style="color:white"></h2>-->
+                </span>
+            </div>
+            <div class="row p-3 d-flex justify-content-center">
+            <ul class="inline-list mx-auto p-0" style="font-size:5em">
+                <li class="list-inline-item"><a href="http://www." target="_blank" style="color:white"> <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"></i></a></li>
+                <li class="list-inline-item"><a href="http://www." target="_blank" style="color:white"><i class="fab fa-twitter" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                <li class="list-inline-item"><a href="http://www." target="_blank" style="color:white"><i class="fab fa-youtube" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                <li class="list-inline-item"><a href="http://www." target="_blank" style="color:white"><i class="fab fa-twitch" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                <li class="list-inline-item"><a href="http://www." target="_blank" style="color:white"><i class="fab fa-instagram" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+            </ul>
             </div>
           </div>
-          
-        </div>
-      </div>
+    
+    <div class="col-12 col-md-4 d-flex justify-content-center">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">@lang('profile.overview')</div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush text-dark">
+                  <li class="list-group-item">@lang('profile.positions'):<br>{{$player->position}}</li>
+                  <li class="list-group-item">@lang('profile.age'):<br>{{$player->birth_date}}</li>
+                  <li class="list-group-item">@lang('profile.ranking_position'):<br></li>
+                  <li class="list-group-item">@lang('profile.awards'):<br></li>
+                </ul>
+            </div>
+          </div>
+
 
     </div>
 
-    <hr class="border" style="color:white">
+
+    
+  </div>
+
+      <hr>
 
     <h1 class="text-center" style="color:white">@lang('profile.statistics')</h1>
     <table class="table table-dark table-striped table-sm mx-auto" style="width:90%">
@@ -101,6 +66,8 @@
           <th scope="col">@lang('profile.assists')</th>
           <th scope="col">@lang('profile.yellow_cards')</th>
           <th scope="col">@lang('profile.red_cards')</th>
+
+
 
         </tr>
       </thead>
@@ -116,7 +83,7 @@
       </tbody>
     </table>
 
-    <hr class="border" style="color:white">
+    <hr>
     <section hidden>
     <h1 class="text-center" style="color:white">@lang('profile.history')</h1>
     <table class="table table-dark table-striped table-sm mx-auto" style="width:90%">

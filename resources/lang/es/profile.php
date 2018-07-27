@@ -17,5 +17,9 @@ return [
     "apps" => "Apariciones",
     "assists" => "Asistencias",
     "yellow_cards" => "Tarjetas Amarillas",
-    "red_cards" => "Tarjetas Rojas"
+    "red_cards" => "Tarjetas Rojas",
+    "age" => "Edad",
+    "ranking_position" => "Posición en el Ranking",
+    "awards" => "Palmarés",
+    "overview" => "General"
 ];

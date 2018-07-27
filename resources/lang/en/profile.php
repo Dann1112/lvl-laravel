@@ -17,5 +17,9 @@ return[
     "apps" => "Appearances",
     "assists" => "Assists",
     "yellow_cards" => "Yellow Cards",
-    "red_cards" => "Red Cards"
+    "red_cards" => "Red Cards",
+    "age" => "Age",
+    "ranking_position" => "Ranking Position",
+    "awards" => "Awards",
+    "overview" => "Overview"
 ];
