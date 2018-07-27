@@ -51,6 +51,9 @@ Route::post('/panel/results','FixturesController@saveResults');
 Route::get('/panel/inscriptions','StandingsController@create')->name('inscriptions');
 Route::post('/panel/inscriptions','StandingsController@store');
 
+Route::get('/panel/player_inscription','InscriptionsController@index')->name('player_inscription');
+Route::post('/panel/player_inscription','InscriptionsController@store');
+
 Route::get('/panel/stats','PlayerStatController@newStat')->name('player_stats');
 Route::post('/panel/stats','PlayerStatController@store');
 

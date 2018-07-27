@@ -80,5 +80,6 @@
         'shots_driven' => 'Tiros Desviados',
         'crosses_caught' => 'Centros Atrapados',
         'balls_taken' => 'Balones Robados',
-        'show' => 'Mostrar'
+        'show' => 'Mostrar',
+        'player_inscriptions' => 'Inscripciones (Jugadores)'
     ];

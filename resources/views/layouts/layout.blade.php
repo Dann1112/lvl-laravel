@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
     @include('partials.head')
-    @include('partials.header')
+	@include('partials.header')
+	<div id="fb-root"></div>
+
+	<!-- SCRIPT FOR FACEBOOK DEVELOPERS PLUGIN -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
     <body>
         <!-- Div que permite desplazar el contenido debido al header flotante-->
         <div class="container-fluid row" style="height:70px; background-color: black">

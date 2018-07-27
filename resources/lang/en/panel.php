@@ -81,6 +81,7 @@
         'shots_driven' => 'Shots Driven',
         'crosses_caught' => 'Crosses Caught',
         'balls_taken' => 'Balls Taken',
-        'show' => 'Show'
+        'show' => 'Show',
+        'player_inscriptions' => 'Inscriptions(Players)'
 
     ];

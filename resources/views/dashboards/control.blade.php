@@ -12,6 +12,7 @@
             <a href="{{route('results')}}"<li class="list-group-item bg-dark" style="color:white"><i class="fas fa-futbol mr-2"></i>@lang('panel.results')</li></a>
             <a href="{{route('player_stats')}}"<li class="list-group-item bg-dark" style="color:white"><i class="fas fa-futbol mr-2"></i>@lang('panel.player_stats')</li></a>
             <a href="{{route('inscriptions')}}"<li class="list-group-item bg-dark" style="color:white"><i class="fas fa-pen-square mr-2"></i>@lang('panel.inscriptions')</li></a>
+            <a href="{{route('player_inscription')}}"<li class="list-group-item bg-dark" style="color:white"><i class="fas fa-pen-square mr-2"></i>@lang('panel.player_inscriptions')</li></a>
             <a href="{{route('player_stats')}}"<li class="list-group-item bg-dark" style="color:white"><i class="fas fa-pen-square mr-2"></i>@lang('panel.player_stats')</li></a>
         </ul>
     </div>
