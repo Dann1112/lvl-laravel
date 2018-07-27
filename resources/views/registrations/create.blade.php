@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
     
     @include('partials.head')
@@ -405,6 +405,10 @@
                         <h4 class="text-center text-light" style="font-weight:bold">@lang('register.dontMiss')</h4>
                         <span mx-auto>@lang('register.clickHere')</span>
                                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpuntogmr&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<br>
+<div class="form-group">
+                                    <button type="submit"class="btn btn-lg mx-auto d-block" style="background-color:gold"> @lang('register.title') </button>
+                            </div>
                     </form>
                 </section>
             </div>
