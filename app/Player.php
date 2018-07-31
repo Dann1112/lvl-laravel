@@ -10,6 +10,7 @@ class Player extends Model
     public $incrementing = false;
     protected $keyType = 'string';
 
+
     public function freeAgents($query){
         return $query->where('team','FA')->get();
     }

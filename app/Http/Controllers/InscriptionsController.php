@@ -28,7 +28,7 @@ class InscriptionsController extends Controller
 
         //\App\Message::where('id',request('message'))->update(['status'=>1]);
 
-        return redirect()->home();
+        return view('panel.player_inscription');
         
     }
 }
