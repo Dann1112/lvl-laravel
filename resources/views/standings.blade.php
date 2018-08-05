@@ -33,7 +33,7 @@
                   @if($cont==1)
                   <tr style="background-color:lawngreen; color:black">
                     @else
-                    <a href="/teams/{{$team->id}}"><tr>
+                    <tr>
                       @endif
                         <!--<th scope="row">{{$stand->position}}&nbsp<i class="fa fa-caret-up"></i></th>-->
                         <td>{{$cont}}</td>
@@ -49,7 +49,7 @@
                         <th scope="col" class="d-none d-sm-table-cell">{{$stand->goals_for}}</th>
                         <th scope="col" class="d-none d-sm-table-cell">{{$stand->goals_against}}</th>
                         <td>{{$stand->points}}</td>
-                      </tr></a>
+                      </tr>
                       @else
                       @continue
                       @endif
