@@ -33,7 +33,7 @@
                   @if($cont==1)
                   <tr style="background-color:lawngreen; color:black">
                     @else
-                    <a href="/teams/{{$team->idS}}"><tr>
+                    <a href="/teams/{{$team->id}}"><tr>
                       @endif
                         <!--<th scope="row">{{$stand->position}}&nbsp<i class="fa fa-caret-up"></i></th>-->
                         <td>{{$cont}}</td>
