@@ -194,7 +194,7 @@
                                 <div class="card col-3 text-center border rounded contenedor">
                                             <h4 class="mt-2" style="color:white">@lang('teams.top_scorer')</h4>
                                             @if($assists_stats != null)
-                                            <img class="card-img-top align-self-center rounded-circle" src="/storage/{{$scorer->profile_picture}}" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
+                                            <img class="card-img-top align-self-center rounded-circle" src="/storage/generic.png" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
                                             <div class="card-body">
                                                 
                                                 <p class="card-text" style="color:white; font-size:120%; font-weight:bold">{{$scorer_stats->player}}<br>{{$scorer_stats->goals}} @lang('teams.goals')</p>
@@ -208,7 +208,7 @@
                                           <div class="card col-3 text-center contenedor border rounded">
                                             <h4 class="mt-2" style="color:white">@lang('teams.top_assists')</h4>
                                             @if($assists_stats != null)
-                                            <img class="card-img-top align-self-center rounded-circle" src="/storage/{{$assists->profile_picture}}" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
+                                            <img class="card-img-top align-self-center rounded-circle" src="/storage/generic.png" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
                                             <div class="card-body">
                                                 
                                                 <p class="card-text" style="color:white; font-size:120%; font-weight:bold">{{$assists_stats->player}}<br>{{$assists_stats->assists}} @lang('teams.assists')</p>
@@ -277,9 +277,9 @@
                                         @elseif($player->username == $team->comanager)
                                         <tr class="text-center clickable-row bg-info" data-href='players/{{$player->username}}' style="cursor:pointer">
                                         @else
-                                        <tr class="text-center clickable-row bg-info" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        <tr class="text-center clickable-row" data-href='players/{{$player->username}}' style="cursor:pointer">
                                         @endif
-                                            <th scope="row"><img src="/storage/{{$player->profile_picture}}" style="max-height: 30px; max-width: 30px"></th>
+                                            <td><img src="/assets/img/generic.png" style="max-height: 30px; max-width: 30px"></td>
                                             <td><img src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="max-height: 30px; max-width: 30px"></td>
                                             <td>{{$player->username}}</td>
                                               <td>{{$player->overall}}</td>

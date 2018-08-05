@@ -44,7 +44,7 @@
                         <td style="font-weight: bold">{{$stand->games_played}}</td>
                         <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_won}}</th>
                         <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_tied}}</th>
-                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_won}}</th>
+                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_lost}}</th>
                         <td>{{$stand->goal_difference}}</td>
                         <th scope="col" class="d-none d-sm-table-cell">{{$stand->goals_for}}</th>
                         <th scope="col" class="d-none d-sm-table-cell">{{$stand->goals_against}}</th>
