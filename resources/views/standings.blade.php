@@ -31,9 +31,9 @@
                   @foreach($teams as $team)
                   @if($stand->team == $team->id)
                   @if($cont==1)
-                  <tr style="background-color:lawngreen; color:black">
+                    <tr class="clickable-row" data-href="/teams/{{$team->id}}" style="background-color:lawngreen; color:black; cursor:pointer">
                     @else
-                    <tr>
+                    <tr class="clickable-row" data-href="/teams/{{$team->id}}" style="cursor:pointer">
                       @endif
                         <!--<th scope="row">{{$stand->position}}&nbsp<i class="fa fa-caret-up"></i></th>-->
                         <td>{{$cont}}</td>
@@ -72,6 +72,14 @@
         GC: Goles en Contra<br>
         Pts: Puntos acumulados hasta este momento
         </p>
+
+        <script>
+          jQuery(document).ready(function($) {
+            $(".clickable-row").click(function() {
+                window.location = $(this).data("href");
+            });
+        });
+      </script>
     
       </div>
 

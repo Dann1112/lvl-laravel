@@ -132,10 +132,16 @@ class TeamController extends Controller
         $last_5_teams = \App\Team::whereIn('name',$last_5_teams)->take(5)->get();
 
         $scorer_stats = \App\PlayerStat::where('team',$team->id)->orderBy('goals','desc')->first();
+        if($scorer_stats != null)
         $scorer = \App\Player::where('username',$scorer_stats->player)->first();
+        else $scorer = null;
+        
 
         $assists_stats = \App\PlayerStat::where('team',$team->id)->orderBy('assists','desc')->first();
+        if($assists_stats != null)
         $assists = \App\Player::where('username',$assists_stats->player)->first();
+        else $assists = null;
+        
 
         $squad_players = \App\Inscription::where('team',$team->id)->pluck('player');
 
