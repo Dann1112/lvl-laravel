@@ -121,7 +121,7 @@
                   <a href="/ranking/clubs/shots_away"> <button name="shotsOnTargetClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.shots_away')</button></a>
                   <a href="/ranking/clubs/completed_passes"> <button name="completedPassesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_passes')</button></a>
                   <a href="/ranking/clubs/failed_passes"> <button name="completedPassesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_passes')</button></a>
-                  <a href="/ranking/clubs/succesful_crosses"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_crosses')</button></a>
+                  <a href="/ranking/clubs/completed_crosses"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.completed_crosses')</button></a>
                   <a href="/ranking/clubs/failed_crosses"> <button name="succesfulCrossesClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.failed_crosses')</button></a>
                   <a href="/ranking/clubs/clean_sheets"> <button name="cleanSheetsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.clean_sheets_gk')</button></a>
                   <a href="/ranking/clubs/fouls"> <button name="foulsClubsBtn" class="btn btn-outline-light btn-lg text-left" style="width: 100%">@lang('ranking.fouls')</button></a>

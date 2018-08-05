@@ -79,9 +79,9 @@ class PlayerStatController extends Controller
             $keepers = \App\Player::where('position','=','GK')->pluck('username');
 
             if(!request()->has('competition')){
-                $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT');
+                $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT')->where($stat, '>','0');;
             }else{
-                $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT')->whereIn('fixture',$fixtures);
+                $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT')->whereIn('fixture',$fixtures)->where($stat, '>','0');;
             }
 
                 $players = $players->whereIn('player',$keepers)->groupBy('player')
@@ -138,7 +138,6 @@ class PlayerStatController extends Controller
                 break;
 
             case 'loses':
-                return 'loses';
                 break;
 
             case 'clean_sheets':
@@ -250,7 +249,15 @@ class PlayerStatController extends Controller
             'lost_possession' => request('lost_possession'),
             'clearances' => request('clearances'),
             'won_headers' => request('won_headers'),
-            'lost_headers' => request('lost_headers')]);
+            'lost_headers' => request('lost_headers'),
+            
+            'goals_conceded_gk' => request('goals_conceded_gk'),
+            'shots_caught_gk' => request('shots_caught_gk'),
+            'shots_driven_gk' => request('shots_driven_gk'),
+            'crosses_caught_gk' => request('crosses_caught_gk'),
+            'balls_taken_gk' => request('balls_taken_gk')
+            
+            ]);
 
         return redirect()->route('player_stats');
     }

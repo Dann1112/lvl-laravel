@@ -12,7 +12,7 @@ class PlayerStat extends Model
         'player', 'competition', 'fixture','team',
 
         //Atack
-        'goals', 'shots_on_taget', 'shots_away','assists','completed_passes', 'failed_passes',
+        'goals', 'shots_on_target', 'shots_away','assists','completed_passes', 'failed_passes',
         'completed_crosses', 'failed_crosses','fouls_received',
 
         //Defense
