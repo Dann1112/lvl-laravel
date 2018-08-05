@@ -16,7 +16,8 @@ class PlayerStatController extends Controller
 
         $stat = 'goals';
 
-        $players = PlayerStat::selectRaw('player, sum(goals) as STAT')
+        $players = PlayerStat::selectRaw('player, sum(goals) as STAT ')
+        ->where('goals','>','0')
         ->take(60)
         ->groupBy('player')
         ->orderBy('STAT', 'DESC')
@@ -106,9 +107,9 @@ class PlayerStatController extends Controller
 
             default:
                 if(request()->has('competition')){
-                    $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT')->whereIn('fixture',$fixtures);
+                    $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT')->whereIn('fixture',$fixtures)->where($stat, '>','0');
                 } else{
-                    $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT');
+                    $players = PlayerStat::selectRaw('player, sum('.$stat.') as STAT')->where($stat, '>','0');
                 }
 
                 $players = $players->groupBy('player')->orderBy('STAT', 'DESC')->take(60)->paginate(15);
@@ -128,7 +129,6 @@ class PlayerStatController extends Controller
             $fixtures = \App\Fixture::where('competition','=',$comp)->pluck('id');
         }
 
-        
 
         switch($stat){
             case 'wins':
