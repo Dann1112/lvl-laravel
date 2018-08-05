@@ -58,7 +58,7 @@
         'interceptions' => 'Intercepciones',
         'blocks' => 'Bloqueos',
         'won_tackles' => 'Entradas Ganadas',
-        'lost_tackles' => 'Entradas Perdidas',
+        'failed_tackles' => 'Entradas Perdidas',
         'save' => 'Guardar',
         'shots_on_target'=>'Tiros a Puerta',
         'shots_away' => 'Tiros Desviados',

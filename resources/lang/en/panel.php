@@ -59,7 +59,7 @@
         'interceptions' => 'Interceptions',
         'blocks' => 'Blocks',
         'won_tackles' => 'Won Tackles',
-        'lost_tackles' => 'Lost Tackles',
+        'failed_tackles' => 'Lost Tackles',
         'save' => 'Save',
         'shots_on_target'=>'Shots On Target',
         'shots_away' => 'Shots Away',

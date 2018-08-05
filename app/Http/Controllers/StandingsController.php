@@ -73,7 +73,7 @@ class StandingsController extends Controller
             'team' => request('team')
         ]);
 
-        return redirect()->home();
+        return redirect()->route('inscriptions');
 
 
     }

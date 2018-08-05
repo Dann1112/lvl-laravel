@@ -177,7 +177,7 @@ class PlayerStatController extends Controller
 
     public function newStat(){
         $players = \App\Inscription::orderBy('player','ASC')->pluck('player');
-        $competitions = \App\Competition::where('status','=','1')->orderBy('name','ASC')->get(['id','name']);
+        $competitions = \App\Competition::where('status','0')->orderBy('name','ASC')->get(['id','name']);
         return view('panel.player_stats', compact(['players','competitions']));
     }
 

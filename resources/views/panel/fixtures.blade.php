@@ -47,7 +47,7 @@
                     <option value="2">@lang('panel.finished')</option>
                     <option value="3">@lang('panel.postponed')</option>
               </select>
-              <label class="col-form-label col-2 " for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
+              <label class="col-form-label col-2 text-light" for="matchday">@lang('panel.matchday')&nbsp<span class="text-danger">*</span></label>
               <input class="form-control col-2" type="text" name="matchday">
             </div>
 
@@ -60,7 +60,7 @@
                     <option value="{{$team->id}}">{{$team->name}}</option>
                   @endforeach
               </select>
-              <span class="col-1" >VS</span>
+              <span class="col-1 text-light" >VS</span>
               <select class="form-control col-5" name="away_team">
                     <option selected disabled hidden>@lang('panel.away_team')</option>
                     @foreach($teams as $team)

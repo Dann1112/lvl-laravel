@@ -29,7 +29,7 @@ class CompetitionsController extends Controller
             'champion' => request('champion')
         ]);
 
-        return redirect()->home();
+        return redirect()->route('competitions');
 
         
 

@@ -101,7 +101,7 @@ class FixturesController extends Controller
         ]);
 
 
-        return redirect()->home();
+        return redirect()->route('results');
 
     }
 
@@ -127,7 +127,7 @@ class FixturesController extends Controller
             'time' => request('time'),
         ]);
 
-        return redirect()->home();
+        return redirect()->route('fixtures');
 
     }
 }
