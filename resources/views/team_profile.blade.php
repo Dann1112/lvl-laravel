@@ -4,24 +4,23 @@
 
 <div class="container-fluid" style="background: linear-gradient(to bottom, {{$team->primary_color}}, black);">
     <div class="container py-5 d-flex align-items-center justify-content-center">
-    <img class="mr-5" style="height:auto; width:auto; max-height:200px; max-width:200px" src="/storage/{{$team->logo}}"  alt="{{$team->name}}">
         <div class="text-center">
         <h1 class="display-3">{{$team->name}}</h1>
             <ul class="inline-list mx-auto p-0" style="font-size:4em">
                 @if($team->facebook !== null)
-                    <li class="list-inline-item"><a href="http://www.{{$team->facebook}}" target="_blank" style="color:white"> <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" style="color:white"> <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"></i></a></li>
                     @endif
                 @if($team->twitter !== null)
-                    <li class="list-inline-item"><a href="http://www.{{$team->twitter}}" target="_blank" style="color:white"><i class="fab fa-twitter" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-twitter" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
                     @endif
                 @if($team->youtube !== null)
-                    <li class="list-inline-item"><a href="http://www.{{$team->youtube}}" target="_blank" style="color:white"><i class="fab fa-youtube" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-youtube" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
                     @endif
                 @if($team->twitch !== null)
-                    <li class="list-inline-item"><a href="http://www.{{$team->twitch}}" target="_blank" style="color:white"><i class="fab fa-twitch" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-twitch" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
                     @endif
                 @if($team->instagram !== null)
-                    <li class="list-inline-item"><a href="http://www.{{$team->instagram}}" target="_blank" style="color:white"><i class="fab fa-instagram" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-instagram" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
                     @endif
             </ul>
         </div>
@@ -192,7 +191,7 @@
                             <hr class="border" style="color:white">
                             <div class="row d-flex justify-content-around">
                                     
-                                <div class="card col-3 text-center">
+                                <div class="card col-3 text-center border rounded contenedor">
                                             <h4 class="mt-2" style="color:white">@lang('teams.top_scorer')</h4>
                                             <img class="card-img-top align-self-center rounded-circle" src="/storage/{{$scorer->profile_picture}}" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
                                             <div class="card-body">
@@ -201,7 +200,7 @@
                                             </div>
                                           </div>
 
-                                          <div class="card col-3 text-center">
+                                          <div class="card col-3 text-center contenedor border rounded">
                                             <h4 class="mt-2" style="color:white">@lang('teams.top_assists')</h4>
                                             <img class="card-img-top align-self-center rounded-circle" src="/storage/{{$assists->profile_picture}}" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
                                             <div class="card-body">
@@ -209,9 +208,9 @@
                                                 <p class="card-text" style="color:white; font-size:120%; font-weight:bold">{{$assists_stats->player}}<br>{{$assists_stats->assists}} @lang('teams.assists')</p>
                                             </div>
                                           </div>
-                                              <div class="card col-3 text-center">
+                                              <div class="card col-3 text-center contenedor border rounded">
                                                     <h4 class="mt-2" style="color:white">@lang('teams.the_best')</h4>
-                                                    <img class="card-img-top align-self-center rounded-circle" src="/storage/{{$team->logo}}" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
+                                                    <img class="card-img-top align-self-center rounded-circle" src="/storage/{{$assists->profile_picture}}" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
                                                     <div class="card-body">
                                                         
                                                             <p class="card-text" style="color:white; font-size:120%; font-weight:bold">@lang('teams.coming_soon')</p>
@@ -220,7 +219,7 @@
                             </div>
                         </section>
                         
-                        <section class="mb-3">
+                        <!--<section class="mb-3">
                                 <hr class="border" style="color:white">
                                 <h3 class="text-center" style="width:100%">@lang('teams.latest_news')</h3>
                             <hr class="border" style="color:white">
@@ -245,7 +244,7 @@
                                                   </div>
                                         
                             </div>
-                        </section>
+                        </section>-->
             </div>
 
             <div class="tab-pane fade" id="squad" role="tabpanel" aria-labelledby="squad-tab">
@@ -263,7 +262,14 @@
                                 <tbody>
                                         @foreach($squad as $player)
                                         <a href="players/{{$player->username}}">
-                                        <tr class="text-center clickable-row" data-href='players/{{$player->username}}' style="cursor:pointer">
+
+                                        @if($player->username == $team->manager)
+                                        <tr class="text-center clickable-row bg-warning" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        @elseif($player->username == $team->comanager)
+                                        <tr class="text-center clickable-row bg-info" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        @else
+                                        <tr class="text-center clickable-row bg-info" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        @endif
                                             <th scope="row"><img src="/storage/{{$player->profile_picture}}" style="max-height: 30px; max-width: 30px"></th>
                                             <td><img src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="max-height: 30px; max-width: 30px"></td>
                                             <td>{{$player->username}}</td>

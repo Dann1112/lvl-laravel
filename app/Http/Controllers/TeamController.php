@@ -139,7 +139,7 @@ class TeamController extends Controller
 
         $squad_players = \App\Inscription::where('team',$team->id)->pluck('player');
 
-        $squad = \App\Player::whereIn('username',$squad_players)->orderBy('overall','desc')->get();
+        $squad = \App\Player::whereIn('username',$squad_players)->orderBy('username','asc')->get();
 
         return view('team_profile',compact('team','next_fixture','last_fixture','next_home_team',
         'next_away_team','last_home_team','last_away_team', 'last_5_teams', 'last_5_matches','scorer','scorer_stats',

@@ -377,8 +377,8 @@
             <div class="form-inline">
                 <label class="ml-auto" style="color:white">@lang('players.orderby') &nbsp;</label>
                 <select class="form-control" name="orderby">
-                  <option value="overall" selected>@lang('players.overall')</option>
-                  <option value="username" >@lang('players.name')</option>
+                  <option value="overall">@lang('players.overall')</option>
+                  <option value="username" selected>@lang('players.name')</option>
                   <option value="position" >@lang('players.position')</option>
                   <option value="pace" >@lang('players.pace')</option>
                   <option value="shooting" >@lang('players.shooting')</option>
