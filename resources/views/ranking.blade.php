@@ -4,11 +4,6 @@
 
   <div class="row d-flex my-3 col-sm-10 col-12 mx-auto rounded contenedor">
 
-    <br>
-    <hr style="border-color: yellow">
-    <div class="container-fluid text-center py-3">
-    <h3>Seccion en Mantenimiento. Los datos pueden variar en estos momentos, o la página puede que funcione anormalmente</h3>
-    </div>
     <hr style="border-color: yellow">
 
     <div class="p-3 col-md-4 col-12 border-radius rounded contenedor">
