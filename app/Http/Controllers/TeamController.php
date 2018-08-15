@@ -112,12 +112,20 @@ class TeamController extends Controller
         if($next_fixture){
             $next_home_team = \App\Team::where('name',$next_fixture->home_team)->first();
             $next_away_team = \App\Team::where('name',$next_fixture->away_team)->first();
+        }else{
+            $next_home_team = $team;
+            $next_away_team = $team;
         }
 
         if($last_fixture){
             $last_home_team = \App\Team::where('name',$last_fixture->home_team)->first();
             $last_away_team = \App\Team::where('name',$last_fixture->away_team)->first();
         }
+        else{
+            $last_home_team = $team;
+            $last_away_team = $team;
+        }
+
 
         $last_5_teams = array();
 
