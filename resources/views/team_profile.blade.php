@@ -58,7 +58,7 @@
 
                                                 @if($last_fixture)
                                                 <div class="text-center">
-                                                <img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$last_home_team->logo}}"  alt="TeamName">
+                                                <!--<img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$last_home_team->logo}}"  alt="TeamName">-->
                                                 </div>
 
                                                 
@@ -69,7 +69,7 @@
                                                 </div>
                             
                                                 <div class="text-center">
-                                                    <img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$last_away_team->logo}}"  alt="TeamName">
+                                                    <!--<img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$last_away_team->logo}}"  alt="TeamName">-->
                                                 </div>
                                             
 
@@ -138,7 +138,7 @@
 
                                                     <li class="list-inline-item">
                                                             <div class="d-flex flex-column">
-                                                            <img class="mb-1" style="height:auto; width:auto; max-height:40px; max-width:40px" src="/storage/{{$team->logo}}"  alt="TeamName">
+                                                            <!--<img class="mb-1" style="height:auto; width:auto; max-height:40px; max-width:40px" src="/storage/{{$team->logo}}"  alt="TeamName">-->
 
                                                             @if($match->home_team == $team->name)
                                                                 @if($match->home_goals > $match->away_goals)
