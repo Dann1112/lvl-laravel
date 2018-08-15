@@ -109,8 +109,6 @@ class TeamController extends Controller
         $last_home_team = null;
         $last_away_team = null;
 
-        return $next_fixture;
-
         if($next_fixture){
             $next_home_team = \App\Team::where('name',$next_fixture->home_team)->first();
             $next_away_team = \App\Team::where('name',$next_fixture->away_team)->first();
