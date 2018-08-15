@@ -11,16 +11,16 @@
            <table class="table table-striped table-dark table-hover">
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Pos</th>
-                    <th scope="col">Equipo</th>
-                    <th scope="col">PJ</th>
-                    <th scope="col" class="d-none d-sm-table-cell">PG</th>
-                    <th scope="col" class="d-none d-sm-table-cell">PE</th>
-                    <th scope="col" class="d-none d-sm-table-cell">PP</th>
-                    <th scope="col">DG</th>
-                    <th scope="col" class="d-none d-sm-table-cell">GF</th>
-                    <th scope="col" class="d-none d-sm-table-cell">GC</th>
-                    <th scope="col">Pts</th>
+                    <th scope="col">@lang('standings.pos')</th>
+                    <th scope="col">@lang('standings.team')</th>
+                    <th scope="col">@lang('standings.GP')</th>
+                    <th scope="col" class="d-none d-sm-table-cell">@lang('standings.W')</th>
+                    <th scope="col" class="d-none d-sm-table-cell">@lang('standings.D')</th>
+                    <th scope="col" class="d-none d-sm-table-cell">@lang('standings.L')</th>
+                    <th scope="col">@lang('standings.GD')</th>
+                    <th scope="col" class="d-none d-sm-table-cell">@lang('standings.GF')</th>
+                    <th scope="col" class="d-none d-sm-table-cell">@lang('standings.GA')</th>
+                    <th scope="col">@lang('standings.PTS')</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -32,23 +32,28 @@
                   @if($stand->team == $team->id)
                   @if($cont==1)
                     <tr class="clickable-row" data-href="/teams/{{$team->id}}" style="background-color:lawngreen; color:black; cursor:pointer">
+                    @elseif($cont<=5)
+                    <tr class="clickable-row" data-href="/teams/{{$team->id}}" style="background-color:skyblue ; color:black; cursor:pointer">
                     @else
                     <tr class="clickable-row" data-href="/teams/{{$team->id}}" style="cursor:pointer">
                       @endif
                         <!--<th scope="row">{{$stand->position}}&nbsp<i class="fa fa-caret-up"></i></th>-->
-                        <td>{{$cont}}</td>
+                        <td>{{$cont}}°</td>
                     <!-- <td><img src="/storage/{{$team->logo}}" style="max-height: 20px; max-width: 20px"> -->
-                    <td><i class="fas fa-circle" style="color: {{$team->primary_color}}"></i>
+                    <td style="font-weight:bold"><i class="fas fa-circle" style="color: {{$team->primary_color}}"></i>
                         <span class="d-none d-sm-inline">&#160&#160{{$team->name}}</span>
                           <span class="d-inline d-sm-none">{{$team->abbreviation}}</span></td>
                         <td style="font-weight: bold">{{$stand->games_played}}</td>
-                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_won}}</th>
-                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_tied}}</th>
-                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->games_lost}}</th>
-                        <td>{{$stand->goal_difference}}</td>
-                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->goals_for}}</th>
-                        <th scope="col" class="d-none d-sm-table-cell">{{$stand->goals_against}}</th>
-                        <td>{{$stand->points}}</td>
+                        <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->games_won}}</th>
+                        <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->games_tied}}</th>
+                        <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->games_lost}}</th>
+                        
+                        @if($stand->goal_difference > 0) <td style="font-weight:normal">+{{$stand->goal_difference}}</td>
+                        @elseif($stand->goal_difference < 0) <td style="font-weight:normal">-{{$stand->goal_difference}}</td>
+                        @endif
+                        <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->goals_for}}</th>
+                        <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->goals_against}}</th>
+                        <td class="font-weight-bold">{{$stand->points}}</td>
                       </tr>
                       @else
                       @continue
@@ -61,16 +66,18 @@
           
         </div>
     
-        <p class="text-center" style="width: 100%; color: white">
-        POS: Muestra la ubicación general del equipo en la tabla y su movimiento respecto a la jornada anterior<br>
-        PJ: Partidos Jugados<br>
-        PG: Partidos Ganados<br>
-        PE: Partidos Empatados<br>
-        PP: Partidos Perdidos<br>
-        DG: Diferencia de Goles<br>
-        GF: Goles a Favor<br>
-        GC: Goles en Contra<br>
-        Pts: Puntos acumulados hasta este momento
+        <p class="text-left pl-3" style="width: 100%; color: white">
+          <span class="badge" style="background-color: lawngreen; color:black ">*@lang('standings.team')*</span> -> @lang('standings.first')<br>
+          <span class="badge" style="background-color: skyblue; color:black">*@lang('standings.team')*</span> -> @lang('standings.playoffs')<br>
+        <span class="font-weight-bold">@lang('standings.pos')</span>:  @lang('standings.pos_info')<br>
+        <span class="font-weight-bold">@lang('standings.GP')</span>: @lang('standings.GP_info')<br>
+        <span class="font-weight-bold">@lang('standings.W')</span>: @lang('standings.W_info')<br>
+        <span class="font-weight-bold">@lang('standings.D')</span>: @lang('standings.D_info')<br>
+        <span class="font-weight-bold">@lang('standings.L')</span>: @lang('standings.L_info')<br>
+        <span class="font-weight-bold">@lang('standings.GD')</span>: @lang('standings.GD_info')<br>
+        <span class="font-weight-bold">@lang('standings.GF')</span>: @lang('standings.GF_info')<br>
+        <span class="font-weight-bold">@lang('standings.GA')</span>: @lang('standings.GA_info')<br>
+        <span class="font-weight-bold">@lang('standings.PTS')</span>: @lang('standings.PTS_info')<br>
         </p>
 
         <script>

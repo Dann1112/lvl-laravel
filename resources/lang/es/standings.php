@@ -1,6 +1,25 @@
 <?php
 return[
-    'season' => 'Temporada'
-
-
+    'season' => 'TEMPORADA',
+    'GP' => 'JJ',
+    'W' => 'V',
+    'D' => 'E',
+    'L' => 'D',
+    'PTS' => 'PTS',
+    'GD' => 'DG',
+    'GF' => 'GF',
+    'GA' => 'GC',
+    'team' => 'EQUIPO',
+    'pos' => 'POS',
+    'first' => 'Clasifica directo a FINAL por el gran premio',
+    'playoffs' => 'Clasifican a PLAYOFFS para enfrentar al 1° lugar en la FINAL por el gran premio',
+    'pos_info' => 'Muestra la ubicación general del equipo en la tabla',
+    'GP_info' => 'Juegos Jugados',
+    'W_info' => 'Victorias',
+    'D_info' => 'Empates',
+    'L_info' => 'Derrotas',
+    'GD_info' => 'Diferencia de Goles',
+    'GF_info' => 'Goles a Favor',
+    'GA_info' => 'Goles en Contra',
+    'PTS_info' => 'Puntos'
 ];

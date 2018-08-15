@@ -3,7 +3,7 @@
 @section('content')
 <div class="container text-center my-3 py-3" style="background-color:black">
         <hr><hr>
-        <h1 style="word-break: break-all">.GMR ESPORTS<h1>
+        <h1 style="word-break: break-all">.GMR e-SPORTS<h1>
         <h2 class="my-2">Tu momento es ahora</h2>
         <hr>
         <hr>

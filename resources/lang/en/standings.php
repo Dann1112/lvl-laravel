@@ -1,6 +1,25 @@
 <?php
 return[
-    'season' => 'Season'
-
-
+    'season' => 'SEASON',
+    'GP' => 'GP',
+    'W' => 'W',
+    'D' => 'D',
+    'L' => 'L',
+    'PTS' => 'PTS',
+    'GD' => 'GD',
+    'GF' => 'GF',
+    'GA' => 'GA',
+    'team' => 'TEAM',
+    'pos' => 'POS',
+    'first' => 'Classified to FINALS for the big prize',
+    'playoffs' => 'Classified to PLAYOFFS to play against 1st place in the FINAL por the big prize',
+    'pos_info' => 'Shows table position of the team',
+    'GP_info' => 'Games Played',
+    'W_info' => 'Wins',
+    'D_info' => 'Draws',
+    'L_info' => 'Loses',
+    'GD_info' => 'Goal Difference',
+    'GF_info' => 'Goals For',
+    'GA_info' => 'Goals Against',
+    'PTS_info' => 'Points'
 ];
