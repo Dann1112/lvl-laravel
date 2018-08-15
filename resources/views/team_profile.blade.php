@@ -95,7 +95,9 @@
                                                 @if($next_fixture)
                                                 
                                                 <div class="text-center">
-                                                <img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$next_home_team->logo}}"  alt="TeamName">
+                                                <!--<img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$next_home_team->logo}}"  alt="TeamName">-->
+                                                    <span class="d-none d-sm-inline badge" style="color: {{$next_home_team->primary_color}}">{{$next_home_team->name}}</span>
+                                                      <span class="d-inline d-sm-none badge" style="color: {{$next_home_team->primary_color}}">{{$next_home_team->abbreviation}}</span>
                                                 </div>
 
                                                 <div class="text-center mx-3">
@@ -105,7 +107,9 @@
                                                 </div>
                             
                                                 <div class="text-center">
-                                                    <img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$next_away_team->logo}}"  alt="TeamName">
+                                                    <!--<img style="height:auto; width:auto; max-height:50px; max-width:50px" src="/storage/{{$next_away_team->logo}}"  alt="TeamName">-->
+                                                    <span class="d-none d-sm-inline badge" style="color: {{$next_away_team->primary_color}}">{{$next_away_team->name}}</span>
+                                                      <span class="d-inline d-sm-none badge" style="color: {{$next_away_team->primary_color}}">{{$next_away_team->abbreviation}}</span>
                                                 </div>
 
                                                 @else
