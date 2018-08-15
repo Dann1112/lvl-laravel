@@ -102,12 +102,14 @@ class TeamController extends Controller
      */
     public function show(Team $team)
     {
-        $next_fixture = \App\Fixture::whereRaw('? IN (home_team, away_team) AND status = 0',$team->name)->oldest('date')->first();
-        $last_fixture = \App\Fixture::whereRaw('? IN (home_team, away_team) AND status = 2',$team->name)->latest('date')->first();
+        $next_fixture = \App\Fixture::whereRaw('? home_team = ? or away_team = ? AND status = 0',$team->id)->oldest('date')->first();
+        $last_fixture = \App\Fixture::whereRaw('? home_team = ? or away_team = ? AND status = 0',$team->id)->latest('date')->first();
         $next_home_team = null;
         $next_away_team = null;
         $last_home_team = null;
         $last_away_team = null;
+
+        return $next_fixture;
 
         if($next_fixture){
             $next_home_team = \App\Team::where('name',$next_fixture->home_team)->first();
