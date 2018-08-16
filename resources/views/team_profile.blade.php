@@ -5,7 +5,7 @@
 <div class="container-fluid" style="background: linear-gradient(to bottom, {{$team->primary_color}}, black);">
     <div class="container py-5 d-flex align-items-center justify-content-center">
         <div class="text-center">
-        <h1 class="display-3">{{$team->name}}</h1>
+        <h1 style="font-size:8vw">{{$team->name}}</h1>
             <ul class="inline-list mx-auto p-0" style="font-size:4em">
                 @if($team->facebook !== null)
                     <li class="list-inline-item"><a href="#" target="_blank" style="color:white"> <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"></i></a></li>
@@ -26,163 +26,184 @@
         </div>
     </div>
 </div>
+
+
+
+
 <div class="container-fluid" style="background-color:black">
     <div class="container">
         <ul class="nav nav-tabs nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="general" aria-selected="true">@lang('teams.overview')</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" id="squad-tab" data-toggle="tab" href="#squad" role="tab" aria-controls="general" aria-selected="true">@lang('teams.squad')</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+                <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="general" aria-selected="true">@lang('teams.overview')</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="squad-tab" data-toggle="tab" href="#squad" role="tab" aria-controls="general" aria-selected="true">@lang('teams.squad')</a>
+            </li>
+        </ul>
             
 
-            <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="general-tab">
-                        <section class="mb-3">
-                                <hr class="border" style="color:white">
-                                <h3 class="text-center" style="width:100%">@lang('teams.fixtures')</h3>
-                                <hr class="border" style="color:white">
-                            <div class="container">
-                                
-                                <div class="row justify-content-around my-3" style="max-height:180px">
-                        
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="general-tab">
+                <div class="container my-3">
+
+                    <section class="mb-3">
+
+                    <!-- ******************************************** 
+                    MATCHES
+                    ******************************************** -->
+                        <hr class="border" style="color:white">
+                        <h3 class="text-center" style="width:100%">@lang('teams.fixtures')</h3>
+                        <hr class="border" style="color:white">
                                     
-                                    
-                                    <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-between border rounded py-3">
-                                        <h4>@lang('teams.last_fixture')</h4>        
-
-                                        
-                                            <div class="d-flex mb-3">
-
-                                                @if($last_fixture)
-                                                <div class="text-center">
-                                                </div>
-
-                                                
-                                                <div class="text-center mx-3">
-                                                    <span style="font-size: 2em; color:white">{{$last_fixture->home_goals}} : {{$last_fixture->away_goals}}</span><br>
-                                                    <span >{{$last_fixture->date}}</span><br>
-                                                    <span >{{$last_fixture->time}}</span>
-                                                </div>
+                        <div class="row justify-content-around my-3">
                             
-                                                <div class="text-center">
-                                                </div>
-                                            
+                        <!-- ******************************************** 
+                        LAST FIXTURE
+                        ******************************************** -->
+                            <div class="col-12 col-md-6 col-lg-3 md-my-0 my-2 d-flex flex-column align-items-center justify-content-center border rounded py-3">
+                                <h4>@lang('teams.last_fixture')</h4>        
+                                <div class="mb-3 row p-0 m-0" style="width:100%">
 
-                                                @else
-
-                                                <div class="text-center">
-                                                    <p>N/A</p>
-                                                </div>
-
-                                                @endif
-                                            </div>
-
-
+                                @if($last_fixture)
+                                    <div class="text-center d-flex-column col-3">
+                                        <i class="fas fa-circle fa-2x" style="color:{{$last_home_team->primary_color}}"></i>
+                                        <p class="text-light">{{$last_home_team->abbreviation}}</p>
                                     </div>
-                        
-                                    
-                                    <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-between border rounded py-3">
-                                        <h4>@lang('teams.next_fixture')</h4>        
-                                            
+
+                                    <div class="text-center col-6 p-0">
+                                        <span style="font-size: 2em; color:white">{{$last_fixture->home_goals}} : {{$last_fixture->away_goals}}</span><br>
+                                        <span class="text-light">{{$last_fixture->date}}</span>
+                                        <span class="text-light">{{$last_fixture->time}}</span>
+                                    </div>
+                
+                                    <div class="text-center d-flex-column col-3">
+                                        <i class="fas fa-circle fa-2x" style="color:{{$last_away_team->primary_color}}"></i>
+                                        <p class="text-light">{{$last_away_team->abbreviation}}</p>
+                                    </div>
+
+                                @else
+                                    <div class="text-center col-12">
+                                        <p class="text-light">N/A</p>
+                                    </div>
+                                @endif
+                                </div>
+
+                            </div>
 
 
-                                            <div class="d-flex mb-3">
-                                                @if($next_fixture)
-                                                
-                                                <div class="text-center">
-                                                    <span class="d-none d-sm-inline badge" style="color: {{$next_home_team->primary_color}}">{{$next_home_team->name}}</span>
-                                                      <span class="d-inline d-sm-none badge" style="color: {{$next_home_team->primary_color}}">{{$next_home_team->abbreviation}}</span>
-                                                </div>
-
-                                                <div class="text-center mx-3">
-                                                    <span style="font-size: 2em; color:white">VS</span><br>
-                                                    <span >{{$next_fixture->date}}</span><br>
-                                                    <span >{{$next_fixture->time}}</span>
-                                                </div>
                             
-                                                <div class="text-center">
-                                                    <span class="d-none d-sm-inline badge" style="color: {{$next_away_team->primary_color}}">{{$next_away_team->name}}</span>
-                                                      <span class="d-inline d-sm-none badge" style="color: {{$next_away_team->primary_color}}">{{$next_away_team->abbreviation}}</span>
-                                                </div>
+                        <!-- ******************************************** 
+                        NEXT FIXTURE
+                        ******************************************** -->
+                            <div class="col-12 col-md-6 col-lg-3 md-my-0 my-2 d-flex flex-column align-items-center justify-content-center border rounded py-3">
+                                <h4>@lang('teams.next_fixture')</h4>        
+                                <div class="mb-3 row p-0 m-0" style="width:100%">
 
-                                                @else
-                                                <div class="text-center">
-                                                    <p>N/A</p>
-                                                </div>
-
-                                                @endif
-                                            </div>
-
-
+                                    @if($next_fixture)
+                                    <div class="text-center d-flex-column col-3">
+                                        <i class="fas fa-circle fa-2x" style="color:{{$next_home_team->primary_color}}"></i>
+                                        <p class="text-light">{{$next_home_team->abbreviation}}</p>
                                     </div>
-                        
-                                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-between border rounded py-3">
-                                        <h4>@lang('teams.form')</h4>        
-                                            
 
-
-                                            <div class="d-flex mb-3">
-                                                <ul class="list-inline">
-                                                    @foreach($last_5_matches as $match)
-
-                                                    @foreach($last_5_teams as $team)
-
-                                                    @if($match->home_team == $team->name || $match->away_team == $team->name)
-
-                                                    <li class="list-inline-item">
-                                                            <div class="d-flex flex-column">
-
-                                                            @if($match->home_team == $team->name)
-                                                                @if($match->home_goals > $match->away_goals)
-                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: red; height:40px; width:40px">
-                                                                @elseif($match->home_goals < $match->away_goals)
-                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: greenyellow; height:40px; width:40px">
-                                                                @else
-                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: orange; height:40px; width:40px">
-                                                                @endif
-
-                                                            @else
-                                                                @if($match->home_goals > $match->away_goals)
-                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: greenyellow; height:40px; width:40px">
-                                                                @elseif($match->home_goals < $match->away_goals)
-                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: red; height:40px; width:40px">
-                                                                @else
-                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: orange; height:40px; width:40px">
-                                                        @endif
-
-                                                            @endif
-                                                                
-                                                                    <span style="color:black; font-weight: bold">{{$match->home_goals}}:{{$match->away_goals}}</span>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                    @else
-                                                    @continue
-
-                                                    @endif
-
-                                                    
-
-
-                                                    
-
-                                                        @endforeach
-                                                        @endforeach
-
-                                                    
-                                                </ul>
-                                            </div>
-
-
+                                    <div class="text-center col-6 p-0">
+                                        <span style="font-size: 2em; color:white">{{$last_fixture->home_goals}} : {{$last_fixture->away_goals}}</span><br>
+                                        <span class="text-light">{{$next_fixture->date}}</span>
+                                        <span class="text-light">{{$next_fixture->time}}</span>
                                     </div>
-                        
+                    
+                                    <div class="text-center d-flex-column col-3">
+                                        <i class="fas fa-circle fa-2x" style="color:{{$next_away_team->primary_color}}"></i>
+                                        <p class="text-light">{{$next_away_team->abbreviation}}</p>
+                                    </div>
+
+                                    @else
+                                    <div class="text-center col-12">
+                                        <p class="text-light">N/A</p>
+                                    </div>
+                                    @endif
                                 </div>
                             </div>
-                        </section>
+                            
+
+
+                        <!-- ******************************************** 
+                        FORM
+                        ******************************************** -->
+
+                            <div class="col-12 col-md-6 col-lg-4 md-my-0 my-2 d-flex flex-column align-items-center justify-content-center border rounded py-3">
+                                <h4>@lang('teams.form')</h4>        
+                                
+                                <div class="d-flex justify-content-center" style="width:100%">
+                                    <ul class="list-inline m-0" style="witdh:100%">
+                                        @foreach($last_5_matches as $match)
+                                            <li class="list-inline-item">
+                                                <div class="d-flex flex-column text-center">
+
+                                                    <!-- FIRST WE GOT TO KNOW IF CURRENT TEAM WAS HOME OR AWAY -->
+                                                    <!-- ONCE WE KNOW THAT, WE LOOK FOR HIS OPPONENT -->
+                                                    <!-- THEN WE SET THE SCORE AND THE COLOR OF THE CIRCLE -->
+                                                    <!-- AT THE END WE SET HIS OPPONENT NAME -->
+                                                    @if($match->home_team == $team->id)
+                                                                    
+                                                        @foreach($last_5_teams as $opponent)
+                                                            @if($match->away_team == $opponent->id)
+                                                                @if($match->home_goals > $match->away_goals)
+                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: lawngreen; height:40px; width:40px">
+                                                                @elseif($match->home_goals < $match->away_goals)
+                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: red; height:40px; width:40px">
+                                                                @else
+                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: yellow; height:40px; width:40px">
+                                                                @endif
+
+                                                                <span style="color:black; font-weight: bold">{{$match->home_goals}}:{{$match->away_goals}}</span>
+                                                                </div>
+                                                                    <p class="text-light">vs</p>
+                                                                    <p class="text-light">{{$opponent->abbreviation}}</p>
+                                                                @break
+                                                            @else
+                                                                @continue
+                                                            @endif
+                                                        @endforeach
+
+                                                    @else
+                                                        @foreach($last_5_teams as $opponent)
+                                                            @if($match->home_team == $opponent->id)
+
+                                                                @if($match->home_goals > $match->away_goals)
+                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: red; height:40px; width:40px">
+                                                                @elseif($match->home_goals < $match->away_goals)
+                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: lawngreen; height:40px; width:40px">
+                                                                @else
+                                                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: yellow; height:40px; width:40px">
+                                                                @endif
+
+                                                                <span style="color:black; font-weight: bold">{{$match->home_goals}}:{{$match->away_goals}}</span>
+                                                                </div>
+                                                                    <p class="text-light">vs</p>
+                                                                    <p class="text-light">{{$opponent->abbreviation}}</p>
+                                                                @break
+                                                            @else
+                                                                @continue
+                                                            @endif
+                                                        @endforeach
+
+                                                    @endif
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+
+
+                        <!-- ******************************************** 
+                        CLUB MINI RANKING
+                        ******************************************** -->    
 
                         <section class="mb-3">
                                 <hr class="border" style="color:white">
@@ -190,7 +211,7 @@
                             <hr class="border" style="color:white">
                             <div class="row d-flex justify-content-around">
                                     
-                                <div class="card col-3 text-center border rounded contenedor">
+                                    <div class="col-12 col-md-6 col-lg-3 md-my-0 my-2 card text-center border rounded contenedor">
                                             <h4 class="mt-2" style="color:white">@lang('teams.top_scorer')</h4>
                                             @if($assists_stats != null)
                                             <img class="card-img-top align-self-center rounded-circle" src="/assets/img/generic.png" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
@@ -204,7 +225,7 @@
                                             </div>
                                           </div>
 
-                                          <div class="card col-3 text-center contenedor border rounded">
+                                          <div class="col-12 col-md-6 col-lg-3 md-my-0 my-2 card text-center border rounded contenedor">
                                             <h4 class="mt-2" style="color:white">@lang('teams.top_assists')</h4>
                                             @if($assists_stats != null)
                                             <img class="card-img-top align-self-center rounded-circle" src="/assets/img/generic.png" style="height:auto; width:auto; max-height:150px; max-width:150px" alt="Card image cap">
@@ -217,7 +238,7 @@
                                                 @endif  
                                             </div>
                                           </div>
-                                              <div class="card col-3 text-center contenedor border rounded">
+                                          <div class="col-12 col-md-6 col-lg-3 md-my-0 my-2 card text-center border rounded contenedor">
                                                     <h4 class="mt-2" style="color:white">@lang('teams.the_best')</h4>
                                                     <div class="card-body">
                                                         
@@ -226,120 +247,60 @@
                                                   </div>
                             </div>
                         </section>
-                        
-                        <!--<section class="mb-3">
-                                <hr class="border" style="color:white">
-                                <h3 class="text-center" style="width:100%">@lang('teams.latest_news')</h3>
-                            <hr class="border" style="color:white">
-                            <div class="row d-flex justify-content-around">
-                                    <div class="card col-3">
-                                            <div class="card-body text-center">
-                                                    <p class="card-text" style="color:white; font-size:120%; font-weight:bold">@lang('teams.coming_soon')</p>
-                                            </div>
-                                          </div>
-                                          <div class="card col-3">
-                                                <div class="card-body text-center">
-                                                        <p class="card-text" style="color:white; font-size:120%; font-weight:bold">@lang('teams.coming_soon')</p>
-                                                </div>
-                                              </div>
-                                              <div class="card col-3">
-                                                    <div class="card-body text-center">
-                                                            <p class="card-text" style="color:white; font-size:120%; font-weight:bold">@lang('teams.coming_soon')</p>
-                                                    </div>
-                                                  </div>
-                                        
-                            </div>
-                        </section>-->
-            </div>
+                    </div>
+
+
+            <!-- ******************************************** 
+            SQUAD TAB
+            ******************************************** -->
 
             <div class="tab-pane fade" id="squad" role="tabpanel" aria-labelledby="squad-tab">
                 <div class="container my-3">
-                        <table class="table table-dark table-striped table-hover table-responsive-md">
-                                <thead class="thead-dark">
-                                  <tr class="text-center">
-                                    <th scope="col">@lang('players.picture')</th><!-- FOTO -->
-                                    <th scope="col">@lang('players.nationality')</th><!-- NACIONALIDAD -->
-                                    <th scope="col">@lang('players.name')</th>
-                                    <th scope="col">@lang('players.overall')</th>
-                                    <th scope="col">@lang('players.position')</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                        @foreach($squad as $player)
-                                        <a href="players/{{$player->username}}">
+                    <table class="table table-dark table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr class="text-center">
+                                <th class="d-none d-md-table-cell"scope="col">@lang('players.nationality')</th><!-- NACIONALIDAD -->
+                                <th scope="col">@lang('players.name')</th> <!--NOMBRE-->
+                                <th scope="col">@lang('players.position')</th> <!--POSICION-->
+                            </tr>
+                        </thead>
 
-                                        @if($player->username == $team->manager)
+                        <tbody>
+                            @foreach($squad as $player)
+                                <a href="players/{{$player->username}}">
+                                    @if($player->username == $team->manager)
                                         <tr class="text-center clickable-row bg-warning" data-href='players/{{$player->username}}' style="cursor:pointer">
-                                        @elseif($player->username == $team->comanager)
+                                    @elseif($player->username == $team->comanager)
                                         <tr class="text-center clickable-row bg-info" data-href='players/{{$player->username}}' style="cursor:pointer">
-                                        @else
+                                    @else
                                         <tr class="text-center clickable-row" data-href='players/{{$player->username}}' style="cursor:pointer">
-                                        @endif
-                                            <td><img src="/assets/img/generic.png" style="max-height: 30px; max-width: 30px"></td>
-                                            <td><img src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="max-height: 30px; max-width: 30px"></td>
-                                            <td>{{$player->username}}</td>
-                                              <td>{{$player->overall}}</td>
-                                              <td>@include('partials.positions')</td>
-                                            </tr>
-                                        </a>
-                                          @endforeach
+                                    @endif
+
+                                    <td class="d-none d-md-table-cell" ><img src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="max-height: 30px; max-width: 30px"></td>
+                                    <td>{{$player->username}}</td>
+                                    <td>@include('partials.positions')</td>
+                                    </tr>
+                                </a>
+                            @endforeach
                                         
-                                          <script>
+                                    <script>
                                           jQuery(document).ready(function($) {
                                             $(".clickable-row").click(function() {
                                                 window.location = $(this).data("href");
                                             });
                                         });
-                                      </script>
+                                    </script>
                                     
                     
                                   
-                                </tbody>
-                              </table>
-                        </div>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="tab-pane fade" id="temporada" role="tabpanel" aria-labelledby="temporada-tab">
-                    <div class="container my-3">
-                        <section>
-                            <hr class="border" style="color:white">
-                            <h3 class="text-center" style="width:100%">@lang('teams.last_fixtures')</h3>
-                            <hr class="border" style="color:white">
-                            <table class="table table-dark table-striped table-hover table-responsive-md">
-                                    <thead class="thead-dark">
-                                      <tr class="text-center">
-                                        <th scope="col">@lang('teams.competition')</th><!-- FOTO -->
-                                        <th scope="col">@lang('teams.score')</th><!-- NACIONALIDAD -->
-                                        <th scope="col">@lang('teams.date')</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                        
-                                      
-                                    </tbody>
-                                  </table>
-                        </section>
-                        <section class="my-3">
-                                <hr class="border" style="color:white">
-                                <h3 class="text-center" style="width:100%">@lang('teams.next_fixtures')</h3>
-                                <hr class="border" style="color:white">
-                                <table class="table table-dark table-striped table-hover table-responsive-md">
-                                        <thead class="thead-dark">
-                                          <tr class="text-center">
-                                            <th scope="col">@lang('teams.competition')</th><!-- FOTO -->
-                                            <th scope="col">@lang('teams.fixture')</th><!-- NACIONALIDAD -->
-                                            <th scope="col">@lang('teams.date')</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                            
-                                          
-                                        </tbody>
-                                      </table>
-                            </section>
-                            </div>
-            </div>
-            <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-            </div>
+
+        </div>
+
+    </div>
 </div>
 
 @endsection
