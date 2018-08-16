@@ -106,7 +106,7 @@
                                     </div>
 
                                     <div class="text-center col-6 p-0">
-                                        <span style="font-size: 2em; color:white">{{$last_fixture->home_goals}} : {{$last_fixture->away_goals}}</span><br>
+                                        <span style="font-size: 2em; color:white"> vs </span><br>
                                         <span class="text-light">{{$next_fixture->date}}</span>
                                         <span class="text-light">{{$next_fixture->time}}</span>
                                     </div>
@@ -177,7 +177,7 @@
                                                                     <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: yellow; height:40px; width:40px">
                                                                 @endif
 
-                                                                <span style="color:black; font-weight: bold">-</span>
+                                                                <span style="color:black; font-weight: bold">{{$match->home_goals}}:{{$match->away_goals}}</span>
                                                                 </div>
                                                                     <p class="text-light">vs</p>
                                                                     <p class="text-light">{{$opponent->abbreviation}}</p>
