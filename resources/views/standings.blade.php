@@ -49,7 +49,7 @@
                         <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->games_lost}}</th>
                         
                         @if($stand->goal_difference > 0) <td style="font-weight:normal">+{{$stand->goal_difference}}</td>
-                        @elseif($stand->goal_difference < 0) <td style="font-weight:normal">-{{$stand->goal_difference}}</td>
+                        @elseif($stand->goal_difference < 0) <td style="font-weight:normal">{{$stand->goal_difference}}</td>
                         @endif
                         <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->goals_for}}</th>
                         <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->goals_against}}</th>

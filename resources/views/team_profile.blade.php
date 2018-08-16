@@ -177,7 +177,7 @@
                                                                     <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: yellow; height:40px; width:40px">
                                                                 @endif
 
-                                                                <span style="color:black; font-weight: bold">{{$match->home_goals}}:{{$match->away_goals}}</span>
+                                                                <span style="color:black; font-weight: bold">-</span>
                                                                 </div>
                                                                     <p class="text-light">vs</p>
                                                                     <p class="text-light">{{$opponent->abbreviation}}</p>
