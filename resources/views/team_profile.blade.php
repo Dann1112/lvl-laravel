@@ -269,11 +269,11 @@
                             @foreach($squad as $player)
                                 <a href="/players/{{$player->username}}">
                                     @if($player->username == $team->manager)
-                                        <tr class="text-center clickable-row bg-warning" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        <tr class="text-center clickable-row bg-warning" data-href='/players/{{$player->username}}' style="cursor:pointer">
                                     @elseif($player->username == $team->comanager)
-                                        <tr class="text-center clickable-row bg-info" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        <tr class="text-center clickable-row bg-info" data-href='/players/{{$player->username}}' style="cursor:pointer">
                                     @else
-                                        <tr class="text-center clickable-row" data-href='players/{{$player->username}}' style="cursor:pointer">
+                                        <tr class="text-center clickable-row" data-href='/players/{{$player->username}}' style="cursor:pointer">
                                     @endif
 
                                     <td class="d-none d-md-table-cell" ><img src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="max-height: 30px; max-width: 30px"></td>

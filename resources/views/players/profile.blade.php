@@ -12,15 +12,15 @@
     <div class="row">
 
         <div class="col-12 col-md-8">
-            <div class="row p-3 d-flex justify-content-center">
-                <h1 class="display-3 my-auto mx-3" style="color:white">{{$player->username}}</h1>
+            <div class="p-3 d-flex-column justify-content-center text-center" style="width:100%">
+                <h1 style="font-size:7vw; color:white">{{$player->username}}</h1>
                 <img class="rounded my-auto" src="/assets/img/flags/{{$player->nationality.'@'}}3x.png" alt="{{$player->nationality}}" style="height:50px; width:100px">
             </div>
             <div class="row d-flex justify-content-center">
                 <!--<span class="badge p-2" style="background-color:gray;font-weight:bold"><h2 class="display-4 my-auto mx-3" style="color:white"></h2>-->
                 </span>
             </div>
-            <div class="row p-3 d-flex justify-content-center">
+            <!--<div class="row p-3 d-flex justify-content-center">
             <ul class="inline-list mx-auto p-0" style="font-size:5em">
                 <li class="list-inline-item"><a href="#" target="_blank" style="color:white"> <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-twitter" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
@@ -28,7 +28,7 @@
                 <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-twitch" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" style="color:white"><i class="fab fa-instagram" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i></a></li>
             </ul>
-            </div>
+            </div>-->
           </div>
     
     <div class="col-12 col-md-4 d-flex justify-content-center">
