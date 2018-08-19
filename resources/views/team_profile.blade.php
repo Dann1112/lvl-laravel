@@ -259,7 +259,7 @@
                     <table class="table table-dark table-striped table-hover">
                         <thead class="thead-dark">
                             <tr class="text-center">
-                                <th class="d-none d-md-table-cell"scope="col">@lang('players.nationality')</th><!-- NACIONALIDAD -->
+                                <th class="d-none d-md-table-cell" scope="col">@lang('players.nationality')</th><!-- NACIONALIDAD -->
                                 <th scope="col">@lang('players.name')</th> <!--NOMBRE-->
                                 <th scope="col">@lang('players.position')</th> <!--POSICION-->
                             </tr>
@@ -267,7 +267,7 @@
 
                         <tbody>
                             @foreach($squad as $player)
-                                <a href="players/{{$player->username}}">
+                                <a href="/players/{{$player->username}}">
                                     @if($player->username == $team->manager)
                                         <tr class="text-center clickable-row bg-warning" data-href='players/{{$player->username}}' style="cursor:pointer">
                                     @elseif($player->username == $team->comanager)

@@ -6,7 +6,7 @@ return[
     "weight" => "Weight",
     "birth_date" => "Birth Date",
     "latest_news" => "Latest News",
-    "statistics" => "Statistics",
+    "stats" => "Statistics",
     "goals" => "Goals",
     "history" => "History",
     "totals" => "Totals",
@@ -21,5 +21,17 @@ return[
     "age" => "Age",
     "ranking_position" => "Ranking Position",
     "awards" => "Awards",
-    "overview" => "Overview"
+    "overview" => "Overview",
+    "member_since" => "Member Since",
+    "competition" => "Competencia",
+    "year" => "Year",
+    "possession_won" => "Won Possession",
+    "effect" => "Effectiveness",
+    "tackles_won" => "Tackles Won",
+    "completed_passes" => "Completed Passes",
+    "shots_on_target" => "Shots on Target",
+    "goals_conceded" => "Goals Conceded",
+    "saves" => "Saves",
+    "goals_per_match" => "Goals Per Match"
+    
 ];

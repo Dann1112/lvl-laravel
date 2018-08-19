@@ -6,7 +6,7 @@ return [
     "weight" => "Peso",
     "birth_date" => "Fecha de Nacimiento",
     "latest_news" => "Ultimas Noticias",
-    "statistics" => "Estadisticas",
+    "stats" => "Estadisticas",
     "goals" => "Goles",
     "history" => "Historial",
     "totals" => "Totales",
@@ -21,5 +21,16 @@ return [
     "age" => "Edad",
     "ranking_position" => "Posición en el Ranking",
     "awards" => "Palmarés",
-    "overview" => "General"
+    "overview" => "General",
+    "member_since" => "Miembro Desde",
+    "competition" => "Competencia",
+    "year" => "Año",
+    "possession_won" => "Posesión Ganada",
+    "effect" => "Efectividad",
+    "tackles_won" => "Entradas Ganadas",
+    "completed_passes" => "Pases Completados",
+    "shots_on_target" => "Tiros a Puerta",
+    "goals_conceded" => "Goles Recibidos",
+    "saves" => "Atajadas",
+    "goals_per_match" => "Goles por Partido"
 ];
