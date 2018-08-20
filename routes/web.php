@@ -1,15 +1,11 @@
 <?php
 
-Route::get('/', function(){
-    return view('home');})
-->name('home');
-
 Route::get('/search','PlayerController@showAll')->name('players');
 Route::get('/search/results','PlayerController@search')->name('search_results');
 
-//Route::get('/prueba',function(){
-    //return view('panel.player_stats');
-//})->name('player_stats');
+Route::get('/','HomeController@index')->name('home');
+
+
 
 Route::get('/profile/edit','PlayerController@editProfile')->name('edit_profile');
 Route::get('/profile/inbox','MessageController@index')->name('inbox');

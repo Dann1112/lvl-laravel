@@ -18,7 +18,7 @@
               <a href="https://www.facebook.com/memazosvergasmusic/" target="_blank"><img src="/assets/img/logos/sponsor1.png" class="img-fluid" style="max-height: 100px"></a>
           </div>
           <div class="col-xl-6 col-12 flex-column justify-content-around">
-              <a href="https://www.facebook.com/memazosvergasmusic/" target="_blank"><img src="/assets/img/logos/sponsor2.png" class="img-fluid" style="max-height: 100px"></a>
+              <a href="https://www.facebook.com/LAIRREVERENTENEWYORK/" target="_blank"><img src="/assets/img/logos/sponsor2.png" class="img-fluid" style="max-height: 100px"></a>
           </div>
           </div>
 
