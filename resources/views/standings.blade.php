@@ -50,6 +50,7 @@
                         
                         @if($stand->goal_difference > 0) <td style="font-weight:normal">+{{$stand->goal_difference}}</td>
                         @elseif($stand->goal_difference < 0) <td style="font-weight:normal">{{$stand->goal_difference}}</td>
+                        @else <td style="font-weight:normal">0</td>
                         @endif
                         <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->goals_for}}</th>
                         <th scope="col" class="d-none d-sm-table-cell" style="font-weight:normal">{{$stand->goals_against}}</th>
