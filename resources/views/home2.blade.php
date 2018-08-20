@@ -93,6 +93,7 @@
                     <td style="font-weight: bold">{{$stand->games_played}}</td>
                         @if($stand->goal_difference > 0) <td style="font-weight:normal">+{{$stand->goal_difference}}</td>
                         @elseif($stand->goal_difference < 0) <td style="font-weight:normal">{{$stand->goal_difference}}</td>
+                        @else <td style="font-weight:normal">0</td>
                         @endif
                     <td class="font-weight-bold">{{$stand->points}}</td>
                   </tr>
