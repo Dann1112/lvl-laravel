@@ -138,6 +138,11 @@
                   <th>Posicion </th>
                 </thead>
                 <tbody>
+                    <tr class="clickable-row" style="cursor:pointer">
+                        <td>RED HUSKYS FC</td>
+                        <td>juan316net</td>
+                        <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
+                      </tr>
                   <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>ReyZack10</td>
@@ -320,12 +325,7 @@
                   <th>Actual</th>
                 </thead>
                 <tbody>
-                  <tr class="clickable-row" style="cursor:pointer">
-                      <td>RED HUSKYS FC</td>
-                      <td>juan316net</td>
-                      <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
-                      <td>BENCHWARMERS AS</td>
-                    </tr>
+                  
                     <tr class="clickable-row" style="cursor:pointer">
                       <td>GOLDEN EAGLES</td>
                       <td>Spirex1678</td>
