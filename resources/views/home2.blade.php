@@ -138,169 +138,169 @@
                   <th>Posicion </th>
                 </thead>
                 <tbody>
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>ReyZack10</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>rene_punisher</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>Xx_10-Shadows_xX</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.LB')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>youngrod-973</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>hgx45</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>Felix23Melchor</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>about23hispanic</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>Arellano_007</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                    <tr class="clickable-row" style="cursor:pointer">
                     <td>GOLDEN LIONS</td>
                     <td>margbc29</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Agt_Morenazo</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Andresfelipe009</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>elwinner90</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Fc-RoNaldiNhoG10</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.LB')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Fifa100preal10</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Finger-Wars</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.LW')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>jonychiva</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>JOzil95</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Kingding1x</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.RB')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Kioyugui13</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Leandropinto1990</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>LOKOPORATLAS</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Midnightknight1</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Mundog0604</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>Precixionzz4__</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>SrCriminal</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>tobalALG</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CAM')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>WillyABC2</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>IRREVERENTE NY</td>
                     <td>X-OmG-iTz-Oli-X</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.LB')</span></td>
@@ -320,13 +320,19 @@
                   <th>Actual</th>
                 </thead>
                 <tbody>
-                    <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
+                      <td>RED HUSKYS FC</td>
+                      <td>juan316net</td>
+                      <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
+                      <td>BENCHWARMERS AS</td>
+                    </tr>
+                    <tr class="clickable-row" style="cursor:pointer">
                       <td>GOLDEN EAGLES</td>
                       <td>Spirex1678</td>
                       <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
                       <td>RED HUSKYS FC</td>
                     </tr>
-                  <tr class="clickable-row" data-href="/teams/uno" style="cursor:pointer">
+                  <tr class="clickable-row" style="cursor:pointer">
                     <td>DRACOS FC</td>
                     <td>Dann1112</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
