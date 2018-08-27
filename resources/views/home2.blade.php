@@ -138,55 +138,51 @@
                   <th>Posicion </th>
                 </thead>
                 <tbody>
-                    <tr class="clickable-row" style="cursor:pointer">
-                        <td>RED HUSKYS FC</td>
-                        <td>juan316net</td>
-                        <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
-                      </tr>
+                    
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>ReyZack10</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>rene_punisher</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
                   </tr>
 
                     <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>Xx_10-Shadows_xX</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.LB')</span></td>
                   </tr>
 
                     <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>youngrod-973</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
                     <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>hgx45</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
                   </tr>
 
                     <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>Felix23Melchor</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
                     <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>about23hispanic</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
                     <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
+                    <td>DRA</td>
                     <td>Arellano_007</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
@@ -198,115 +194,109 @@
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Agt_Morenazo</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Andresfelipe009</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>elwinner90</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Fc-RoNaldiNhoG10</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.LB')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Fifa100preal10</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Finger-Wars</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.LW')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>jonychiva</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>JOzil95</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Kingding1x</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.RB')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Kioyugui13</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Leandropinto1990</td>
                     <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>LOKOPORATLAS</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Midnightknight1</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Mundog0604</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>Precixionzz4__</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
-                    <td>SrCriminal</td>
-                    <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
-                  </tr>
-
-                  <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>tobalALG</td>
                     <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CAM')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>WillyABC2</td>
                     <td><span class="badge" style="background-color:#e9573e; color:black; font-weight:bold">@lang('position.GK')</span></td>
                   </tr>
 
                   <tr class="clickable-row" style="cursor:pointer">
-                    <td>IRREVERENTE NY</td>
+                    <td>RRN</td>
                     <td>X-OmG-iTz-Oli-X</td>
                     <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.LB')</span></td>
                   </tr>
@@ -325,19 +315,41 @@
                   <th>Actual</th>
                 </thead>
                 <tbody>
-                  
                     <tr class="clickable-row" style="cursor:pointer">
-                      <td>GOLDEN EAGLES</td>
+                        <td>RRN</td>
+                        <td>SrCriminal</td>
+                        <td><span class="badge" style="background-color:#4b89dc; color:black; font-weight:bold">@lang('position.ST')</span></td>
+                        <td>EAG</td>
+                      </tr>
+
+                    <tr class="clickable-row" style="cursor:pointer">
+                        <td>RDH</td>
+                        <td>juan316net</td>
+                        <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.RM')</span></td>
+                        <td>BNC</td>
+                      </tr>
+
+
+                    <tr class="clickable-row" style="cursor:pointer">
+                        <td>EAG</td>
+                        <td>gogoguerrero</td>
+                        <td><span class="badge" style="background-color:#f6bb43; color:black; font-weight:bold">@lang('position.CB')</span></td>
+                        <td>A51</td>
+                      </tr>
+
+                    <tr class="clickable-row" style="cursor:pointer">
+                      <td>EAG</td>
                       <td>Spirex1678</td>
                       <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
-                      <td>RED HUSKYS FC</td>
+                      <td>RDH</td>
                     </tr>
-                  <tr class="clickable-row" style="cursor:pointer">
-                    <td>DRACOS FC</td>
-                    <td>Dann1112</td>
-                    <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
-                    <td>RED HUSKYS FC</td>
-                  </tr>
+
+                    <tr class="clickable-row" style="cursor:pointer">
+                      <td>DRA</td>
+                      <td>Dann1112</td>
+                      <td><span class="badge" style="background-color:#8dc153; color:black; font-weight:bold">@lang('position.CDM')</span></td>
+                      <td>RDH</td>
+                    </tr>
                 </tbody>
               </table>
         </div>
