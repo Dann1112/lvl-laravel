@@ -118,6 +118,7 @@
 
   </div>
 
+  <!--|
   <div class="col-12 order-1 col-lg-8  order-lg-2">
 
             <br>
@@ -149,5 +150,10 @@
             </div>
 
           
-    </div>
+  </div>
+
+-->
+
+</div>
+
 @endsection
