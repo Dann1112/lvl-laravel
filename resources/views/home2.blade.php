@@ -125,7 +125,7 @@
             <hr>
             <h3>TheKillerXD19</h3><br><h5>GOLDEN LIONS</h5>
             <hr>
-            <div class="embed-responsive embed-responsive-16by9 col-12">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://youtu.be/5oheMkHTpIY?t=19m42s" allowfullscreen></iframe>
             </div>
             <hr>
@@ -135,7 +135,7 @@
             <hr>
             <h3>CRACK_ANGEL1</h3><br><h5>GOLDEN LIONS</h5>
             <hr>
-            <div class="embed-responsive embed-responsive-16by9 col-12">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://youtu.be/XpHl_kf-owU?t=26m18s" allowfullscreen></iframe>
             </div>
             <hr>
@@ -145,7 +145,7 @@
             <hr>
             <h3>MOOY_10</h3><br><h5>BENCHWARMERS AS</h5>
             <hr>
-            <div class="embed-responsive embed-responsive-16by9 col-12">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://youtu.be/Osib1qUnNfI" allowfullscreen></iframe>
             </div>
 
